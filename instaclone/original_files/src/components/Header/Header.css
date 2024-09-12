@@ -1,0 +1,20 @@
+.header {
+  min-height: 132px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #A5A5A5;
+}
+
+.header__title {
+  width: fit-content;
+  color: #fff;
+  font-size: 40px;
+  position: relative;
+}
+
+.header__title_power {
+  width: fit-content;
+  vertical-align: super;
+  font-size: 15px;
+  position: absolute;
+}

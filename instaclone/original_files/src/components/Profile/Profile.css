@@ -1,0 +1,96 @@
+.profile {
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+}
+
+
+.profile__user-info-container {
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  color: white;
+  width: 100%;
+}
+
+
+.profile__photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../../images/avatar.jpg);
+}
+
+
+.profile__data {
+  max-width: 364px;
+  margin-left: 36px;
+}
+
+
+.profile__name {
+  margin: 0;
+  font-weight: normal;
+  font-size: 54px;
+  line-height: 56px;
+}
+
+
+.profile__job {
+  margin: 20px 0 0 0;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+
+.profile__add-button {
+  position: absolute;
+  top: 16px;
+  right: 0;
+}
+
+
+.profile__edit-button {
+  width: 38px;
+  height: 18px;
+  font-size: 12px;
+  margin-top: 24px;
+}
+
+@media screen and (max-width: 980px) {
+  .profile__edit-button {
+      margin: 24px auto 0;
+  }
+}
+
+/* 
+******************
+Медиазапросы
+******************
+*/
+
+@media screen and (max-width: 980px) {
+  .profile__user-info-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  .profile__photo {
+    margin-top: 40px;
+  }
+
+
+  .profile__data {
+    margin: 20px 0;
+    text-align: center;
+  }
+
+
+  .profile__add-button {
+    position: static;
+    margin-bottom: 40px;
+  }
+}

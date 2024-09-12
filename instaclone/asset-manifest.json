@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "./static/css/main.8cb8f50f.chunk.css",
+    "main.js": "./static/js/main.2a828942.chunk.js",
+    "main.js.map": "./static/js/main.2a828942.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.ae815cca.js",
+    "runtime-main.js.map": "./static/js/runtime-main.ae815cca.js.map",
+    "static/js/2.9aed15bc.chunk.js": "./static/js/2.9aed15bc.chunk.js",
+    "static/js/2.9aed15bc.chunk.js.map": "./static/js/2.9aed15bc.chunk.js.map",
+    "index.html": "./index.html",
+    "static/css/main.8cb8f50f.chunk.css.map": "./static/css/main.8cb8f50f.chunk.css.map",
+    "static/js/2.9aed15bc.chunk.js.LICENSE.txt": "./static/js/2.9aed15bc.chunk.js.LICENSE.txt",
+    "static/media/index.css": "./static/media/Inter-Regular.dcba3388.woff2",
+    "static/media/autumnLeaves.3c591bde.jpg": "./static/media/autumnLeaves.3c591bde.jpg",
+    "static/media/Profile.css": "./static/media/avatar.327ec56c.jpg",
+    "static/media/calmLake.23279b62.jpg": "./static/media/calmLake.23279b62.jpg",
+    "static/media/city.8cb49630.jpg": "./static/media/city.8cb49630.jpg",
+    "static/media/forest.79fc9542.jpg": "./static/media/forest.79fc9542.jpg",
+    "static/media/Card.css": "./static/media/trash-icon.d54911bb.svg",
+    "static/media/monumentValley.df026e12.jpg": "./static/media/monumentValley.df026e12.jpg",
+    "static/media/river.357063c2.jpg": "./static/media/river.357063c2.jpg",
+    "static/media/road.043c72a8.jpg": "./static/media/road.043c72a8.jpg",
+    "static/media/valley.26492eda.jpg": "./static/media/valley.26492eda.jpg",
+    "static/media/village.86445013.jpg": "./static/media/village.86445013.jpg",
+    "static/media/waterside.48e19e6c.jpg": "./static/media/waterside.48e19e6c.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ae815cca.js",
+    "static/js/2.9aed15bc.chunk.js",
+    "static/css/main.8cb8f50f.chunk.css",
+    "static/js/main.2a828942.chunk.js"
+  ]
+}

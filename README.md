@@ -1,1 +1,1 @@
-https://cyberqostya.github.io/junior-projects
+https://cyberqostya.github.io/testovie-zadaniya

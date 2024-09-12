@@ -1,17 +1,17 @@
 @font-face {
   font-family: Hauss;
   font-weight: 400;
-  src: url(/test5/static/media/als_hauss_regular.61d31901865398cb2245.woff2);
+  src: url(/testovie-zadaniya/test5/static/media/als_hauss_regular.61d31901865398cb2245.woff2);
 }
 @font-face {
   font-family: Hauss;
   font-weight: 600;
-  src: url(/test5/static/media/als_hauss_medium.2485987402a4b522e233.woff2);
+  src: url(/testovie-zadaniya/test5/static/media/als_hauss_medium.2485987402a4b522e233.woff2);
 }
 @font-face {
   font-family: Hauss;
   font-weight: 800;
-  src: url(/test5/static/media/als_hauss_bold.fb55fe41be9a4aff708d.woff2);
+  src: url(/testovie-zadaniya/test5/static/media/als_hauss_bold.fb55fe41be9a4aff708d.woff2);
 }
 :root {
   --main-color: #007ac2;
@@ -74,10 +74,7 @@
 .get-users__label-container input[type="checkbox"] {
   display: none;
 }
-.get-users__label-container
-  input[type="checkbox"]:checked
-  ~ .get-users__label
-  .get-users__checkbox:after {
+.get-users__label-container input[type="checkbox"]:checked ~ .get-users__label .get-users__checkbox:after {
   -webkit-transform: scale(1);
   transform: scale(1);
 }

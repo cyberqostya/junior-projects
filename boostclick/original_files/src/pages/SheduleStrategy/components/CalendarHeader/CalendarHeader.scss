@@ -1,0 +1,33 @@
+@import "src/utils";
+
+.calendarheader {
+  display: flex;
+  column-gap: $calendarcellsdistance;
+  justify-content: flex-end;
+  margin-bottom: $calendarcellsdistance;
+}
+
+.calendarheader__roll {
+  width: 98px;
+  margin-right: auto;
+  background: center url("~assets/images/calendarroll.svg") no-repeat;
+  transition: all 0.4s;
+}
+.calendarheader._active {
+  .calendarheader__roll {
+    transform: rotate(180deg);
+  }
+}
+
+.calendarheader__column {
+  display: flex;
+  column-gap: $calendarcelldistance;
+
+  > div {
+    width: $calendarcellwidth;
+    height: $calendarcellwidth;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,54 @@
+@import "src/utils";
+
+.interactiveTDB {
+  @extend %text;
+  margin-bottom: 25px;
+}
+
+.interactiveTDB__title {
+  font-weight: 600;
+}
+
+.interactiveTDB__title-container {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.interactiveTDB__container {
+  margin-top: 5px;
+  position: relative;
+}
+
+.interactiveTDB__digit {
+  font-size: 30px;
+  line-height: 1;
+  & span:nth-child(2) {
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 800;
+    margin-left: 7px;
+  }
+  & span:nth-child(3) {
+    font-size: 40px;
+    line-height: 48px;
+    margin-left: 3px;
+    font-weight: 600;
+  }
+}
+
+.interactiveTDB__bar {
+  position: relative;
+  width: 315px;
+  height: 7px;
+  border-radius: 30px;
+  background-color: $lightgrey;
+
+  &-progress {
+    height: 100%;
+    position: absolute;
+    border-radius: 30px;
+    background-color: $green;
+    transition: all 0.4s;
+  }
+}

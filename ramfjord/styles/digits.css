@@ -1,0 +1,78 @@
+.digits {
+  background: center/cover url(../images/digits-back.png);
+  color: #fff;
+  padding-top: 140px;
+  padding-bottom: 140px;
+}
+
+.digits__title {
+  margin: 0;
+}
+
+.digits__container {
+  margin-top: 60px; 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  --gap: 80px;
+  grid-gap: var(--gap);
+}
+
+.digits__digit {
+  width: calc((100% - var(--gap)) / 2);
+  min-width: 510px;
+}
+
+.digits__digit-title {
+  font-family: Neumann, 'Times New Roman', Times, serif;
+  text-transform: uppercase;
+  font-size: 90px;
+  line-height: 130px;
+  margin: 0;
+  font-weight: 100;
+  background: linear-gradient(#DFB46D 0%, #E8CDA1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  color: #DFB46D;
+}
+
+.digits__digit-measure {
+  font-size: 50px;
+  line-height: 73px;
+  text-transform: lowercase;
+}
+
+.digits__digit-text {
+  margin: 0;
+  max-width: 365px;
+}
+
+
+@media screen and (max-width: 800px) {
+  .digits {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+  .digits__container {
+    margin-top: 20px;
+    grid-gap: 30px;
+  }
+  .digits__digit {
+    min-width: auto;
+    width: 100%;
+  }
+  .digits__digit-title {
+    font-size: 70px;
+    line-height: 110px;
+  }
+}
+@media screen and (max-width: 440px) {
+  .digits__digit-title {
+    font-size: 48px;
+    line-height: 60px;
+  }
+  .digits__digit-measure {
+    font-size: 30px;
+    line-height: 1;
+  }
+}

@@ -1,0 +1,17 @@
+@import "src/utils";
+
+.calendarcells {
+  display: flex;
+  column-gap: $calendarcellsdistance;
+}
+
+.calendarcells__column {
+  display: flex;
+  column-gap: $calendarcelldistance;
+}
+
+.calendarcells__subcolumn {
+  display: flex;
+  flex-direction: column;
+  row-gap: $calendarcellsverticaldistance;
+}

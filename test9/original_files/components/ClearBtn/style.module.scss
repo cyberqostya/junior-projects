@@ -1,0 +1,12 @@
+@use '@var' as *;
+
+.clear {
+  & path {
+    fill: $color-gray-200;
+    transition: fill .4s;
+  }
+
+  &:hover path {
+    fill: $color-black-100;
+  }
+}

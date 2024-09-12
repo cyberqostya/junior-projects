@@ -1,0 +1,30 @@
+@use '../../../UI.scss' as *;
+
+.tag {
+  background-color: $colorbackground;
+  padding: 4px 8px;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  width: fit-content;
+
+  &__title {
+    @extend %fonttextsmall;
+    color: $colorgrey500;
+    margin: 0 8px 0 0;
+  }
+
+  &__image {
+    width: 14px;
+    height: 12px;
+    margin-right: 2px;
+  }
+
+  &__counter {
+    font-size: 10px;
+    line-height: 12px; 
+    font-weight: 400;
+    color: $colorblue800;
+    margin: 0;
+  }
+}

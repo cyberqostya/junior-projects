@@ -1,0 +1,16 @@
+@use '../../../UI.scss' as *;
+
+.forminput {
+  @extend %fonttextbig;
+  color: $colorgrey500;
+  border: 1px solid $colorgrey100;
+  padding: 8px 14px;
+  border-radius: 4px;
+  outline-color: $colororange;
+  font-weight: 600;
+
+  &::placeholder {
+    color: $colorgrey200;
+    font-weight: 300;
+  }
+}

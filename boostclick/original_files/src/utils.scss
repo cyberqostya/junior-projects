@@ -1,0 +1,80 @@
+$black: #1e1e1e;
+$yellow: #fed400;
+$lightyellow: #fff5cb;
+$green: #37ac38;
+$lightgrey: #f9f9fb;
+$red: #c84933;
+
+%text {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+%title {
+  font-size: 48px;
+  line-height: 57px;
+}
+
+%liststyletype {
+  display: flex;
+  column-gap: 15px;
+
+  &::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: $yellow;
+    flex-shrink: 0;
+    margin-top: calc((1em - 8px) / 2);
+  }
+}
+
+%tablerow {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 25% 13% 13% 5% 5% 5% 20% 14%;
+  padding: 20px 0;
+
+  > div:nth-child(2) {
+    margin: 0 auto;
+    cursor: pointer;
+  }
+
+  > div:nth-child(4),
+  > div:nth-child(5),
+  > div:nth-child(6) {
+    margin: 0 auto;
+  }
+
+  > div:last-child {
+    justify-self: flex-end;
+  }
+
+  ._bold {
+    font-weight: 700;
+  }
+
+  ._price {
+    margin-left: 70px;
+  }
+}
+%tablerow-paid {
+  grid-template-columns: 25% 13% 17% 10% 5% 5% 5% 10% 10%;
+
+  > div:nth-child(4) {
+    margin: 0;
+  }
+
+  > div:nth-child(5),
+  > div:nth-child(6),
+  > div:nth-child(7),
+  > div:nth-child(8) {
+    margin: 0 auto;
+  }
+}
+
+$calendarcellwidth: 31px;
+$calendarcellsdistance: 20px;
+$calendarcellsverticaldistance: 15px;
+$calendarcelldistance: 10px;

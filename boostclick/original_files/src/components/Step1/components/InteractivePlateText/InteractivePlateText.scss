@@ -1,0 +1,13 @@
+@import 'src/utils.scss';
+
+.interactive__list {
+  max-width: 435px;
+}
+
+.interactive__list-item {
+  @extend %text;
+
+  &:not(:first-child) {
+    margin-top: 1em;
+  }
+}

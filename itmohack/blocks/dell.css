@@ -1,0 +1,35 @@
+.dell {
+  padding-bottom: 4em;
+}
+
+
+.dell__subtitle {
+  margin-top: 1.5em;
+}
+.dell__subtitle:first-of-type {
+  margin-top: 0.5em;
+}
+
+
+.dell__text-container {
+  padding-top: 2em;
+}
+
+
+.dell__text {
+  margin-top: 1.5em;
+
+  text-align: justify;
+  text-indent: 1em;
+}
+
+
+.dell__text-list-item {
+  margin-top: 0.5em;
+
+  list-style-position: inside;
+  text-indent: 0;
+}
+.dell__text-list-item_undecorated {
+  list-style-type: none;
+}

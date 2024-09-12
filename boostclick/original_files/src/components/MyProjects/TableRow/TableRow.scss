@@ -1,0 +1,145 @@
+@import "src/utils";
+
+
+.tablerow__cells {
+  @extend %tablerow;
+  align-items: center;
+  border-bottom: 1px solid #d7e2e4;
+  transition: all 0.4s;
+
+  >div:first-child {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+    cursor: pointer;
+
+    &::before {
+      content: "";
+      width: 17px;
+      height: 6px;
+      background: center/contain url("~assets/images/accordion.svg") no-repeat;
+      transition: all 0.5s;
+    }
+  }
+}
+
+.tablerow._active {
+  .tablerow__cells {
+    border-color: #fff;
+  }
+
+  .tablerow__cells>div:first-child::before {
+    transform: rotate3d(1, 0, 0, 180deg);
+  }
+}
+
+.tablerow__cell {
+  &._link {
+    position: relative;
+    transition: all 0.4s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    &::before {
+      content: "Скопировано";
+      font-size: 14px;
+      line-height: 1;
+      background-color: $lightgrey;
+      padding: 3px 6px;
+      position: absolute;
+      bottom: 120%;
+      left: calc(50% - 47px);
+      opacity: 0;
+      transition: all 0.4s;
+      pointer-events: none;
+    }
+
+    &._copied::before {
+      opacity: 1;
+    }
+  }
+}
+
+.tablerow__additional {
+  display: flex;
+  column-gap: 50px;
+
+  overflow: hidden;
+  height: 0;
+  background-color: $lightgrey;
+  border-radius: 10px;
+  padding: 0 30px;
+  transition: all 0.4s;
+  box-sizing: content-box;
+}
+
+.tablerow__additional-container {
+  &._searchphrases {
+    max-width: 285px;
+  }
+}
+
+.tablerow__additional-title {
+  font-size: 14px;
+  margin-bottom: 20px;
+  line-height: 17px;
+}
+
+.tablerow__additional-text {
+  font-weight: 600;
+  margin-top: 7px;
+}
+
+// Активные проекты
+.tablerow._paid {
+  .tablerow__status {
+    display: flex;
+    column-gap: 3px;
+    span {
+      width: 12px;
+      height: 9px;
+      background-color: $lightgrey;
+      border-radius: 3px;
+      &._active { 
+        background-color: $green; 
+        &:has(+span:not(._active)) {
+          animation: stateping 1.3s infinite;
+        }
+      }
+    }
+  }
+  .tablerow__cells {
+    @extend %tablerow-paid;
+  }
+}
+@keyframes stateping {
+  50% { background-color: $lightgrey; }
+}
+.tablerow__iconbuttons {
+  display: flex;
+  align-items: center;
+  column-gap: 35px;
+}
+.tablerow__iconbutton {
+  width: 31px;
+  height: 31px;
+  background: center/contain no-repeat;
+  transition: all .5s;
+  &:hover {
+    transform: rotate(180deg);
+  }
+
+  &._refresh {
+    background-image: url(~assets/images/refreshicon.svg);
+  }
+  &._cog {
+    background-image: url(~assets/images/cogicon.svg);
+  }
+  &._delete {
+    background-image: url(~assets/images/cross.svg);
+    width: 20px;
+    height: 20px;
+  }
+}

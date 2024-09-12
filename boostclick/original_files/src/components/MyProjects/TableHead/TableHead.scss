@@ -1,0 +1,14 @@
+@import "src/utils";
+
+.tablehead {
+  @extend %tablerow;
+
+  th {
+    text-align: left;
+  }
+}
+
+// Активные проекты
+.tablehead._paid {
+  @extend %tablerow-paid;
+}

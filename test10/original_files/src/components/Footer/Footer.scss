@@ -1,0 +1,116 @@
+@use '../../UI.scss' as *;
+
+.footer {
+  @include block;
+  display: flex;
+  justify-content: flex-start;
+  column-gap: 104px;
+  padding-top: 80px;
+  padding-bottom: 44px;
+  margin-top: 40px;
+
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    row-gap: 14px;
+    flex-shrink: 0;
+  }
+
+
+  &__contacts-text {
+    @extend %fonttext;
+    color: $colorgrey500;
+    text-decoration: none;
+    margin: 0;
+
+    &._email { margin-top: auto; }
+  }
+
+
+  &__nav {
+    display: flex;
+    column-gap: 40px;
+
+
+    &-couple {
+      display: flex;
+      column-gap: 40px;
+    }
+
+
+    &-link {
+      @extend %fonttext;
+      color: $colorblue500;
+      text-decoration: none;
+    }
+  }
+
+  &__copyright {
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 10px;
+    color: $colorgrey200;
+    margin: 32px 0 0;
+  }
+
+
+  &__social {
+    display: flex;
+    grid-gap: 25px;
+    align-self: flex-start;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 1110px) {
+  .footer {
+    column-gap: 18px;
+
+    &__contacts { margin-right: 66px; }
+    &__social { flex-direction: column; }
+  }
+}
+@media screen and (max-width: 920px) {
+  .footer {
+    padding-bottom: 12px;
+
+    &__nav-couple {
+      flex-direction: column;
+      row-gap: 16px;
+    }
+  }
+}
+@media screen and (max-width: $breakpointmobile) {
+  .footer { 
+    padding-top: 0;
+    padding-bottom: 19px;
+    flex-direction: column;
+
+    &__contacts {
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin-right: 0;
+
+      &-text {
+        width: 50%;
+
+        &._phone { order: 1; }
+        &._email { text-align: right; }
+      }
+    }
+
+    &__navigation {
+      margin-top: 36px;
+    }
+
+    &__nav {
+      column-gap: 34px;
+    }
+
+    &__social { 
+      flex-direction: row; 
+      margin-top: 25px;
+    }
+  }
+}

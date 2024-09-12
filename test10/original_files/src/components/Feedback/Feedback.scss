@@ -1,0 +1,162 @@
+@use '../../UI.scss' as *;
+
+.feedback {
+  @include block;
+  margin-top: 78px;
+
+
+  &__image {
+    height: 100%;
+  }
+
+  &__background {
+    background: center/cover url(../../assets/images/feedback.png) no-repeat;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 8px;
+    padding-left: 104px;
+  }
+
+  &__title {
+    @extend %fonttitleh2;
+    font-weight: 700;
+    color: $colorgrey500;
+    margin: 36px 0 0;
+  }
+
+  &__subtitle {
+    @extend %fonttextbig;
+    margin: 4px 0 0;
+  }
+
+  &__input-field {
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+    background-color: $colorwhite;
+    border-radius: 8px;
+    max-width: 504px;
+    position: relative;
+    z-index: 2;
+  }
+
+  &__input-tel {
+    @extend %fonttextbig;
+    font-weight: 600;
+    background-color: $colorwhite;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
+    padding: 24px 25px 8px;
+  }
+
+  &__input-placeholder {
+    @extend %fonttextsmall;
+    position: absolute;
+    top: 4px;
+    left: 25px;
+    color: $colorgrey200;
+    margin: 0;
+  }
+
+  &__button {
+    flex-shrink: 0;
+    min-width: 183px;
+  }
+
+  &__agreement {
+    margin-top: 16px;
+
+    .agreement__checkbox {
+      width: 24px;
+      height: 24px;
+      margin-right: 11px;
+    }
+    .agreement__checkbox-text {
+      max-width: 340px;
+    }
+  }
+
+  &__checkbox-field {
+    display: flex;
+    margin: 16px 0 36px;
+  }
+
+}
+
+@media screen and (max-width: 1140px) {
+  .feedback {
+    &__background { 
+      padding-left: 32px; 
+      position: relative;
+    }
+    &__data {
+      padding-bottom: 32px;
+    }
+    &__image {
+      position: absolute; 
+      right: 0;
+      top: 0;
+    }
+    &__title {
+      font-size: 20px;
+      line-height: 24px;
+    }
+    &__subtitle {
+      max-width: 424px;
+    }
+  }
+}
+@media screen and (max-width: 795px) {
+  .feedback {
+    &__image {
+      object-fit: cover;
+      width: 43%;
+      height: auto;
+      bottom: 0;
+      top: auto;
+      min-width: 280px;
+    }
+  }
+}
+@media screen and (max-width: $breakpointmobile) {
+  .feedback {
+    margin-top: 40px;
+    &__background {
+      flex-direction: column;
+      align-items: center;
+      padding: 0 12px;
+    }
+    &__data {
+      order: 1;
+    }
+    &__image {
+      position: relative;
+      width: 183px;
+      min-width: auto;
+      margin-top: -15px;
+    }
+    &__title {
+      font-size: 16px;
+      line-height: 20px;
+      text-align: center;
+      margin: 4px 0 0;
+    }
+    &__subtitle {
+      text-align: center;
+      max-width: none;
+      margin: 4px 0 0;
+      font-size: 12px;
+      line-height: 16px;
+    }
+    &__input-field {
+      flex-direction: column;
+      background-color: transparent;
+    }
+    &__button {
+      margin-top: 8px;
+    }
+  }
+}

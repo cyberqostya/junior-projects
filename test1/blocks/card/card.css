@@ -1,0 +1,57 @@
+@import url(./__close-image.css);
+@import url(./__image.css);
+@import url(./__about-container.css);
+@import url(./__title.css);
+@import url(./__info-container.css);
+@import url(./__info-block.css);
+@import url(./__info-block-title.css);
+@import url(./__info-block-text.css);
+@import url(./__property-container.css);
+@import url(./__property.css);
+@import url(./__price-container.css);
+@import url(./__price-text-container.css);
+@import url(./__price-data.css);
+@import url(./__price.css);
+@import url(./__price-benefit.css);
+@import url(./__price-button.css);
+@import url(./__price-button-image.css);
+
+.card {
+  margin: 0 auto;
+  padding: 20px;
+
+  max-width: 1200px;
+  box-sizing: border-box;
+
+  position: relative;
+
+  background-color: var(--white);
+  border-radius: 8px;
+}
+
+
+@media screen and (min-width: 530px) {
+  .card {
+    display: grid;
+    grid-template-areas: 
+      'left right'
+      'bottom bottom';
+    grid-template-columns: 178px auto;
+    grid-column-gap: 32px;
+  }
+}
+
+
+@media screen and (min-width: 755px) {
+  .card {
+    padding: 24px 32px;
+  }
+}
+
+
+@media screen and (min-width: 910px) {
+  .card {
+    grid-template-areas: none;
+    grid-template-columns: 178px auto 332px;
+  }
+}

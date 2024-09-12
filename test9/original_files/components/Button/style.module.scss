@@ -1,0 +1,21 @@
+@use '@var' as *;
+
+.button {
+  background-color: $color-red-100;
+  color: $color-white-100;
+
+  transition: background-color .4s;
+
+  padding: 15px 16px;
+  border-radius: $border-radius-s;
+
+  &:hover {
+    background-color: $color-red-200;
+  }
+}
+
+@media (max-width: 389px) {
+  .button {
+    padding: 1.07em 1.14em;
+  }
+}

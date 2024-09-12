@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      min-height: 100vh;
+    }
+
+    .brackets {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+
+      font-size: 16px;
+      font-family: Arial, Helvetica, sans-serif;
+
+      width: 80%;
+      max-width: 300px;
+    }
+
+    .brackets__input {
+      padding: 0.5em;
+
+      width: 100%;
+      border: 2px solid #000;
+
+      outline: none;
+    }
+
+    .brackets__verdict {
+      margin-bottom: 0.25em;
+
+      font-size: 2em;
+    }
+    .brackets__verdict_true {
+      color: #38C461;
+    }
+    .brackets__verdict_false {
+      color: #FF3448;
+    }
+
+  </style>
+  <title>Скобочки</title>
+</head>
+<body>
+  <section class="brackets">
+    <p class="brackets__verdict">Enter brackets</p>
+    <input class="brackets__input" type="text" placeholder="Введите скобки">
+  </section>
+
+  <script>
+    
+    const input = document.querySelector('.brackets__input');
+    const verdict = document.querySelector('.brackets__verdict');
+    const objects = {
+      error: { message: 'Error', color: '#ff3448' },
+      true: { message: 'TRUE', color: '#38c461' },
+      false: { message: 'FALSE', color: '#ff3448' },
+      wait: { message: 'Enter brackets', color: '#000' },
+    }
+    const brackets = {
+      roundBrackets: { openedBracket: '(', closedBracket: ')' },
+      squareBrackets: { openedBracket: '[', closedBracket: ']' },
+      figuredBrackets: { openedBracket: '{', closedBracket: '}' },
+    };
+
+
+
+    // Отрисовка
+    function draw(obj) {
+      verdict.textContent = obj.message;
+      verdict.style.color = obj.color;
+      input.style.borderColor = obj.color;
+    }
+
+    // Вынесение вердикта
+    function result(arr) {
+      if (arr.length === 0) {
+        draw(objects.true);
+      } else {
+        draw(objects.false);
+      }
+    }
+
+    // Основная логика
+    // Если скобка открывающая, она заносится в базу
+    // Если закрывающая, то идёт проверка (??предыдущая была такого же типа и открывающая??)
+    // Если ДА - удали из базы открывающую скобку (образовалась пара)
+    // Если НЕТ - то 100% ошибка, закончи обработку и выведи её
+    function checkInput() {
+      let arrOfBrackets = [];
+      let i = 0;
+      while (i < input.value.length && typeof arrOfBrackets === 'object') {
+
+        for (let key in brackets) {
+          if (input.value[i] === brackets[key].openedBracket) {
+            arrOfBrackets.push(input.value[i]);
+            break;
+          } else if (input.value[i] === brackets[key].closedBracket) {
+            if (arrOfBrackets[arrOfBrackets.length-1] === brackets[key].openedBracket) {
+              arrOfBrackets.pop();
+              break;
+            }
+            arrOfBrackets = false;
+          }
+        }
+        i++;
+      }
+      result(arrOfBrackets);console.log(arrOfBrackets)
+    }
+
+    
+
+    // Обработка каждого ввода символа
+    input.addEventListener('input', function() {
+      if (this.value.length > 0) {
+
+        this.value.match(/[^\(\)\[\]\{\}]/) ? draw(objects.error) : checkInput();
+
+      } else {
+        draw(objects.wait);
+      }
+    });
+
+  </script>
+</body>
+</html>

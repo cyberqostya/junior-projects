@@ -1,0 +1,20 @@
+@font-face {
+  font-family: 'ALS';
+  src: url(./ALSSchlangesans-Light.woff2);
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'ALS';
+  src: url(./ALSSchlangesans.woff2);
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'ALS';
+  src: url(./ALSSchlangesans-Bold.woff2);
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'ALS';
+  src: url(./ALSSchlangesans-Black.woff2);
+  font-weight: 600;
+}

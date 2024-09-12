@@ -1,0 +1,30 @@
+@import "src/utils";
+
+.directform__inputs {
+  display: grid;
+  grid-template-areas: "a b" "c b";
+  grid-gap: 30px 40px;
+  grid-template-columns: 1fr 350px;
+
+  & > *:nth-child(1) {
+    grid-area: a;
+  }
+  & > *:nth-child(2) {
+    grid-area: c;
+  }
+  & > *:nth-child(3) {
+    grid-area: b;
+  }
+}
+
+.directform__text {
+  margin: 60px 0 26px;
+  font-weight: 600;
+  @extend %liststyletype;
+}
+
+.directform__container {
+  height: 0;
+  overflow: hidden;
+  transition: all 0.4s;
+}

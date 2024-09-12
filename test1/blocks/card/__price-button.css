@@ -1,0 +1,35 @@
+.card__price-button {
+  margin: 16px 0 0;
+  padding: 12px 50px;
+
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--gray-750);
+  font-weight: 500;
+
+  background-color: var(--primary-500);
+  border: none;
+  border-radius: 6px;
+
+  cursor: pointer;
+  outline: none;
+
+  transition: background-color .3s;
+}
+.card__price-button:hover {
+  background-color: var(--primary-700);
+}
+.card__price-button:active {
+  background-color: var(--primary-800);
+}
+
+
+@media screen and (min-width: 755px) {
+  .card__price-button {
+    margin: 24px 0 0;
+  }
+}

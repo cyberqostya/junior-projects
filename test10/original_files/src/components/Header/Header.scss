@@ -1,0 +1,160 @@
+@use '../../UI.scss' as *;
+@mixin arrow($url) {
+  content: '';
+  width: 7px;
+  height: 4px;
+  margin-left: 12px;
+  background: center/cover url($url) no-repeat;
+}
+
+.header {
+  @include block;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 74px; 
+
+
+  &__logo-link {
+    margin-right: auto;
+  }
+
+
+  &__data {
+    display: flex;
+    align-items: center;
+  }
+
+
+  &__phone-block {
+    position: relative;
+    padding: 6px 18px 6px 18px;
+  }
+
+
+  &__phone {
+    @extend %fonttext;
+    color: $colorwhite;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+
+    &:first-child::after {
+      @include arrow('../../assets/images/arrowdown_yellow.svg');
+    }
+  }
+
+
+  &__phones-container {
+    display: none;
+    flex-direction: column;
+    background-color: $colorgrey500; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    row-gap: 12px;
+    padding: 6px 18px 6px 18px;
+
+    &._active {
+      display: flex;
+    }
+  }
+
+
+  &__phone-text {
+    @extend %fonttext;
+    color: $colorblue500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+
+    &::after {
+      @include arrow('../../assets/images/arrowdown.svg');
+    }
+  }
+
+
+  &__login {
+    @extend %fonttext;
+    margin-left: 64px;
+    color: $colororange;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+
+    &::before {
+      content: '';
+      width: 9px;
+      height: 10px;
+      margin-right: 6px;
+      background: center/cover url(../../assets/images/login.svg) no-repeat;
+    }
+  }
+
+
+  &__burger {
+    display: none;
+    width: 20px;
+    height: 20px;
+    border: none;
+    background: center/cover url(../../assets/images/burger.svg) no-repeat;
+    cursor: pointer;
+  }
+
+
+  &__close {
+    display: none;
+    background: center/cover url(../../assets/images/close.svg) no-repeat;
+    border: none;
+    width: 12px;
+    height: 12px;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: $breakpointmobile) {
+  .header {
+    background-color: $colorblue800;
+    min-height: 32px; 
+
+
+    &__burger {
+      display: block;
+    }
+
+    &__data {
+      display: none;
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: $colorgrey500;
+
+      &._active {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding: 10px;
+      }
+    }
+
+    &__close {
+      display: block;
+    }
+
+    &__phone-text { display: none; }
+    &__phones-container {
+      position: relative;
+      display: flex;
+      padding: 10px 0;
+      column-gap: 10px;
+    }
+
+    &__phone {
+      &::after { display: none; }
+    }
+
+    &__phone-block {
+      padding: 0;
+    }
+  }
+}

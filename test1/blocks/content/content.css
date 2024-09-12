@@ -1,0 +1,43 @@
+.content {
+  margin: 0;
+  padding: 40px 8px;
+
+  font-size: 14px;
+  line-height: 20px;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  color: var(--gray-400);
+  font-weight: 500;
+
+  width: 100%;
+  min-width: 320px;
+  height: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+
+  background-color: var(--gray-50);
+
+  --gray-750: #383736;
+  --gray-400: #989691;
+  --gray-100: #e7e4de;
+  --gray-50: #f5f4f2;
+
+  --white: #fff;
+
+  --green-500: #64b851;
+  --green-20: #f2faf0;
+
+  --red-500: #eb4b51;
+  --red-20: #faf0f0;
+
+  --blue-500: #2794d8;
+
+  --primary-800: #e1ab08;
+  --primary-700: #f0b505;
+  --primary-500: #fac62d;
+}
+
+/* 
+  1 ключевая точка 530px (контент перерисовывается в планшетный)
+  2 ключевая точка 755px (увеличивается текст, отступы, цветные сообщения становятся в линию)
+  3 ключевая точка 910px (контент перерисовывается в мини-десктоп)
+*/

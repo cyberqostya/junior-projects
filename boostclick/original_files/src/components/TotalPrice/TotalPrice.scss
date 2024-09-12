@@ -1,0 +1,36 @@
+.totalprice {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 15px 47px;
+  text-align: center;
+  margin-top: auto;
+}
+
+.totalprice__title {
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.totalprice__text {
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.totalprice__price {
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+// mode left
+.totalprice._left {
+  text-align: left;
+  flex-direction: row;
+  align-items: center;
+
+  & .totalprice__text-container {
+    max-width: 215px;
+  }
+}

@@ -1,0 +1,26 @@
+.hackathons__text-container {
+  width: 60%;
+
+  position: relative;
+
+  z-index: 2;
+}
+
+
+.hackathons__text {
+  margin-top: 0.3em;
+  padding: 0.3em;
+
+  text-align: justify;
+  text-indent: 1em;
+}
+.hackathons__text:first-of-type {
+  text-indent: 0;
+}
+
+
+@media screen and (max-width: 768px) {
+  .hackathons__text-container {
+    width: auto;
+  }
+}

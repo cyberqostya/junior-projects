@@ -1,0 +1,41 @@
+@use '../../UI.scss' as *;
+
+.banner {
+  @include block(false);
+  background: center/cover url('../../assets/images/bunner.jpg') no-repeat;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 340px;
+  padding: 0 50px;
+  box-sizing: border-box;
+
+  &__title {
+    text-transform: uppercase;
+    color: $colorwhite;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 1232px) {
+  .banner {
+    border-radius: 0;
+  }
+}
+
+@media screen and (max-width: $breakpointmobile) {
+  .banner {
+    min-height: 320px;
+    padding: 0 10px;
+
+    &__title {
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+}

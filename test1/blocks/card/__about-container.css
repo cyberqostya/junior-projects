@@ -1,0 +1,10 @@
+.card__about-container {
+  margin: 20px 0 0;
+}
+
+
+@media screen and (min-width: 530px) {
+  .card__about-container {
+    margin: 0;
+  }
+}

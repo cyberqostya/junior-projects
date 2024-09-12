@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://sun9-69.userapi.com/impg/IXsYGR0XUNFyqYCDYIbX67tEkys8Q0T1h2hSnQ/ycRyOBGauKk.jpg?size=1941x2160&quality=96&sign=95385d413cbe4fc6f2aaad50a67c3eaa&type=album"
+    />
+    <title>Бесконечная карусель</title>
+
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .main {
+        width: 100vw;
+        min-height: 100vh;
+        box-sizing: border-box;
+        background-color: #facc8e;
+
+        display: flex;
+      }
+
+      .slider {
+        margin: auto;
+      }
+
+      .myblock-1 {
+        background-color: gold;
+      }
+      .myblock-2 {
+        background-color: crimson;
+      }
+      .myblock-3 {
+        background-color: hotpink;
+      }
+      .myblock-4 {
+        background-color: lightskyblue;
+      }
+      .myblock-5 {
+        background-color: mediumaquamarine;
+      }
+
+      .myblock {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 200px;
+        color: #fff;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main class="main">
+      <section class="slider">
+        <div class="slider__slider-outer">
+          <div class="slider__road">
+            <div class="slider__slide">
+              <div class="myblock myblock-1">0</div>
+            </div>
+            <div class="slider__slide">
+              <div class="myblock myblock-2">1</div>
+            </div>
+            <div class="slider__slide">
+              <div class="myblock myblock-3">2</div>
+            </div>
+            <div class="slider__slide">
+              <div class="myblock myblock-4">3</div>
+            </div>
+            <div class="slider__slide">
+              <div class="myblock myblock-5">4</div>
+            </div>
+            <div class="slider__slide">
+              <div class="myblock myblock-5">5</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      // Скопируй данный скрипт и при инициализации класса передай в него см README.md --------
+
+      class SliderCarousel {
+        constructor(obj) {
+          this.root = obj.sliderBlock;
+          this.sliderOuter = obj.sliderOuter;
+          this.sliderRoad = obj.sliderRoad;
+          this.slides = obj.slides;
+
+          this.slideWidth = obj.slideWidth;
+          this.slideHeight = obj.slideHeight;
+          this.animationSpeed = obj.animationSpeed || 0.5;
+
+          this.isArrowsWasGiven =
+            obj.arrowLeft && obj.arrowRight ? true : false; // Заданы ли стрелки
+          this.arrowLeft = obj.arrowLeft;
+          this.arrowRight = obj.arrowRight;
+
+          this.slidesCentralIndex = this.findCentralSlideIndex();
+          this.arrayOfSlidesIndexes = [];
+          this.sliderRoadPosition = 0;
+        }
+
+        init() {
+          // Приводит в действие
+          this.isArrowsWasGiven ? "" : this.addArrowsContainer();
+          this.addCustomClasses(); // Добавляются кастомные классы на элементы слайдера
+          this.addStyles(); // Добавляются стили слайдера
+
+          this.addSlideSymmetricalPositions(); // Слайды становятся по местам position: absolute; left
+
+          this.controlSlider();
+        }
+
+        addCustomClasses() {
+          this.root.classList.add("mks-slider");
+          this.sliderOuter.classList.add("mks-slider__slider-outer");
+          this.sliderRoad.classList.add("mks-slider__road");
+          this.slides.forEach((item) => {
+            item.classList.add("mks-slider__slide");
+          });
+
+          this.isArrowsWasGiven
+            ? (this.arrowLeft.classList.add(
+                "mks-slider__arrow",
+                "mks-slider__arrow_left"
+              ),
+              this.arrowRight.classList.add(
+                "mks-slider__arrow",
+                "mks-slider__arrow_right"
+              ))
+            : "";
+        }
+
+        async addStyles() {
+          // Стили CSS для слайдера
+          const styles = document.createElement("style");
+          styles.classList.add("mks-styles-for-slider");
+          document.head.append(styles);
+          styles.textContent = `
+          .mks-slider {
+            width: ${this.slideWidth}px;
+            height: ${this.slideHeight}px;
+          }
+
+          .mks-slider__slider-outer {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+          }
+
+          .mks-slider__road {
+            transition: transform ${this.animationSpeed}s;
+            will-change: transform;
+          }
+
+          .mks-slider__slide {
+            flex-shrink: 0;
+            width: ${this.slideWidth}px; 
+            height: ${this.slideHeight}px;
+            position: absolute;
+            top: 0;
+            will-change: left;
+          }
+
+          ${
+            this.isArrowsWasGiven
+              ? ``
+              : `
+            .mks-slider__arrows-container {
+              margin: 20px auto 0;
+              display: flex;
+              justify-content: center;
+            }
+
+            .mks-slider__arrow {
+              background-color: #fff;
+              color: #000;
+              border: none;
+              font-size: 35px;
+              padding: 5px 10px 10px;
+              border-radius: 5px;
+              display: flex;
+              line-height: 1;
+              cursor: pointer;
+            }
+          `
+          }
+        `;
+
+          styles.textContent += this.isArrowsWasGiven
+            ? ``
+            : `
+          .mks-slider__arrow_left {
+            margin-right: ${this.arrowLeft.offsetWidth}px;
+          }`;
+        }
+
+        findCentralSlideIndex() {
+          return Math.floor(this.slides.length / 2);
+        }
+
+        addSlideSymmetricalPositions() {
+          // Слайды становятся симметрично относительно нулевого
+          for (let i = 0; i <= this.slidesCentralIndex; i++) {
+            // Слайды правее нулевого
+            this.slides[i].style.left = i * this.slideWidth + "px";
+
+            this.arrayOfSlidesIndexes.push(i);
+          }
+          if (this.slides.length > 2) {
+            // Для слайдера из 2 слайдов второй цикл не нужен
+            for (let i = 0; i < this.slidesCentralIndex; i++) {
+              // Слайды левее нулевого
+              const requiredIndex = this.slides.length - 1 - i;
+              this.slides[requiredIndex].style.left =
+                (-i - 1) * this.slideWidth + "px";
+
+              if (this.arrayOfSlidesIndexes.includes(requiredIndex)) {
+                this.arrayOfSlidesIndexes.splice(
+                  this.arrayOfSlidesIndexes.indexOf(requiredIndex),
+                  1
+                );
+              } // Если индекс слайда есть в массиве индексов, то удалить во избежании задваивания
+              this.arrayOfSlidesIndexes.unshift(requiredIndex);
+            }
+          }
+          console.log(this.arrayOfSlidesIndexes);
+        }
+
+        addArrowsContainer() {
+          const arrowsContainer = document.createElement("div");
+          arrowsContainer.classList.add("mks-slider__arrows-container");
+
+          this.arrowLeft = document.createElement("button");
+          this.arrowLeft.textContent = "←";
+          this.arrowLeft.classList.add(
+            "mks-slider__arrow",
+            "mks-slider__arrow_left"
+          );
+
+          this.arrowRight = document.createElement("button");
+
+          this.arrowRight.classList.add(
+            "mks-slider__arrow",
+            "mks-slider__arrow_right"
+          );
+          this.arrowRight.textContent = "→";
+          arrowsContainer.append(this.arrowLeft, this.arrowRight);
+          this.root.append(arrowsContainer);
+        }
+
+        controlSlider() {
+          this.arrowLeft.addEventListener("click", this.prevSlide.bind(this));
+          this.arrowRight.addEventListener("click", this.nextSlide.bind(this));
+        }
+
+        async prevSlide() {
+          this.changeArrayOfSlidesIndexes(-1); // Перекинули слайд в массиве индексов
+          this.slideChangePosition(-1); // Перекинули слайд в DOM
+          this.sliderRoadPosition++;
+          this.moveSlider(); // Двигаем слайдер
+        }
+
+        nextSlide() {
+          // Порядок обратный prevSlide для корректной работы. В функции slideChangePosition изменяется первый слайд в массиве. Когда мы перекидываем слайд с конца в начало. то мы редактируем нужный. Когда мы перекидываем слайд из начала в конец, то редактировать будет не тот. Для этого поменян порядок функций.
+          this.slideChangePosition(1); // Перекинули слайд в DOM
+          this.changeArrayOfSlidesIndexes(1); // Перекинули слайд в массиве индексов
+          this.sliderRoadPosition--;
+          this.moveSlider(); // Двигаем слайдер
+        }
+
+        changeArrayOfSlidesIndexes(sign) {
+          // Последний элемент становится первым
+          switch (sign) {
+            case -1:
+              this.arrayOfSlidesIndexes.unshift(
+                this.arrayOfSlidesIndexes[this.arrayOfSlidesIndexes.length - 1]
+              ); // Вставляем в начало последний элемент
+              this.arrayOfSlidesIndexes.pop(); // Удаляем последний элемент
+              break;
+            case 1:
+              this.arrayOfSlidesIndexes.push(this.arrayOfSlidesIndexes[0]); // Вставляем в конец первый элемент
+              this.arrayOfSlidesIndexes.shift(); // Удаляем первый элемент
+              break;
+          }
+        }
+
+        slideChangePosition(sign) {
+          // берем элемент, которому нужно задать новое положение. Берем у него текущее значение left. Меняем это значение на (ширина слайда * количество слайдов)
+          const requiredSlideIndex = this.arrayOfSlidesIndexes[0];
+          const requiredSlide = this.slides[requiredSlideIndex];
+          const requiredSlidePositionLeft = parseInt(
+            requiredSlide.style.left.match(/-?\d+/)[0]
+          );
+
+          requiredSlide.style.left =
+            requiredSlidePositionLeft +
+            sign * this.slides.length * this.slideWidth +
+            "px";
+        }
+
+        moveSlider() {
+          this.sliderRoad.style.transform = `translateX(${
+            this.sliderRoadPosition * this.slideWidth
+          }px)`;
+        }
+      }
+
+      const options = {
+        sliderBlock: document.querySelector(".slider"),
+        sliderOuter: document.querySelector(".slider__slider-outer"),
+        sliderRoad: document.querySelector(".slider__road"),
+        slides: document.querySelectorAll(".slider__slide"),
+        slideWidth: 1000,
+        slideHeight: 400,
+        animationSpeed: 0.5,
+        arrowLeft: document.querySelector(".slider__arrow_left"),
+        arrowRight: document.querySelector(".slider__arrow_right"),
+      };
+      const carousel = new SliderCarousel(options);
+      carousel.init();
+
+      // Конец скрипта --------
+    </script>
+  </body>
+</html>

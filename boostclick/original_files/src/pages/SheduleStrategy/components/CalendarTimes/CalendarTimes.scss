@@ -1,0 +1,11 @@
+@import "src/utils";
+
+.calendartimes {
+  display: flex;
+  flex-direction: column;
+  row-gap: $calendarcellsverticaldistance;
+}
+
+.calendartimes__time {
+  line-height: $calendarcellwidth;
+}

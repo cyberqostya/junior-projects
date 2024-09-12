@@ -1,0 +1,132 @@
+.block {
+  --padding-left-right: 120px;
+
+  --title-size: 58px;
+  --title-lineheight: 75px;
+
+  --text-size: 18px;
+  --text-lineheight: 24px;
+
+  box-sizing: border-box;
+  padding-left: var(--padding-left-right);
+  padding-right: var(--padding-left-right);
+
+  font-size: var(--text-size);
+  line-height: var(--text-lineheight);
+  font-weight: 300;
+}
+
+.block__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.block__title {
+  font-family: Neumann, 'Times New Roman', Times, serif;
+  text-transform: uppercase;
+  font-size: var(--title-size);
+  line-height: var(--title-lineheight);
+  font-weight: 100;
+}
+
+.block__form-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+
+  position: relative;
+}
+.block__form-link::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+  border: 2px solid;
+  border-image: linear-gradient(
+    to bottom,
+    #9C814A 0%, 
+    #B89F5F 10.67%,
+    #CFB875 23.91%,
+    #ECD68D 36.62%,
+    #FEE99A 51.45%,
+    #E1CB82 69.25%,
+    #D0B775 78.79%,
+    #AE9457 89.53%,
+    #957743 100%
+  );
+  border-image-slice: 1;
+  transition: box-shadow .3s;
+}
+.block__form-link:hover::after {
+  box-shadow: 0px 0px 9px rgba(201, 177, 111, 0.6), inset 0px 0px 10px rgba(201, 177, 111, 0.7);
+}
+
+
+.block__lets-slide {
+  color: #9c9c9c;
+  margin: 15px 10px 0 auto;
+  display: none;
+  align-items: center;
+  justify-content: right;
+  opacity: 50%;
+  pointer-events: none;
+  user-select: none;
+  position: relative;
+  overflow: hidden;
+  width: fit-content;
+}
+.block__lets-slide::after {
+  content: '';
+  display: block;
+  width: 34px;
+  height: 34px;
+  background: center/cover url(../images/lets-slide-icon.svg) no-repeat;
+  margin-left: 15px;
+}
+.block__lets-slide::before {
+  content: '';
+  height: 100%;
+  width: 40px;
+  background: #fff;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  transform: skew(-45deg);
+  animation: blick 8s ease-in-out infinite;
+}
+@keyframes blick {
+  0% { left: -200% }
+  30% { left: 200% }
+  100% { left: 200% }
+}
+
+
+
+/* Mediq Query */
+@media screen and (max-width: 800px) {
+  .block { 
+    --padding-left-right: 15px; 
+
+    --title-size: 46px;
+    --title-lineheight: 64px;
+
+    --text-size: 18px;
+    --text-lineheight: 21px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .block { 
+    --title-size: 36px;
+    --title-lineheight: 50px;
+
+    --text-size: 16px;
+    --text-lineheight: 20px;
+  }
+}

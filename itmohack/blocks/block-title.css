@@ -1,0 +1,11 @@
+.block-title {
+  font-size: 3.75em;
+  font-weight: 500;
+  line-height: 1em;
+}
+
+@media screen and (max-width: 768px) {
+  .block-title {
+    font-size: 3em;
+  }
+}

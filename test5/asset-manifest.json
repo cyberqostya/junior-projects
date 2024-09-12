@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/gazprom-train/static/css/main.f1c5a515.css",
+    "main.js": "/gazprom-train/static/js/main.559b2539.js",
+    "static/media/als_hauss_bold.woff2": "/gazprom-train/static/media/als_hauss_bold.fb55fe41be9a4aff708d.woff2",
+    "static/media/als_hauss_medium.woff2": "/gazprom-train/static/media/als_hauss_medium.2485987402a4b522e233.woff2",
+    "static/media/als_hauss_regular.woff2": "/gazprom-train/static/media/als_hauss_regular.61d31901865398cb2245.woff2",
+    "index.html": "/gazprom-train/index.html",
+    "main.f1c5a515.css.map": "/gazprom-train/static/css/main.f1c5a515.css.map",
+    "main.559b2539.js.map": "/gazprom-train/static/js/main.559b2539.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f1c5a515.css",
+    "static/js/main.559b2539.js"
+  ]
+}

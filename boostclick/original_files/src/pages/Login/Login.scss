@@ -1,0 +1,52 @@
+@import "src/utils";
+
+body:has(.login) {
+  background-color: #fff;
+}
+
+.login {
+  background-color: $lightgrey;
+  padding: 109px 0 182px;
+}
+
+.form__title {
+  font-weight: 800;
+  font-size: 35px;
+  line-height: 42px;
+  margin-bottom: 40px;
+}
+
+.form__text-container {
+  margin-top: 47px;
+}
+
+.form__container {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form__tg-text {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.form__tg {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+
+  &::before {
+    content: "";
+    width: 36px;
+    height: 36px;
+    display: block;
+    background: center/contain url(~assets/images/tgicon.svg) no-repeat;
+    flex-shrink: 0;
+  }
+}

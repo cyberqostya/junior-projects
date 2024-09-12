@@ -1,0 +1,19 @@
+@import url(../vendor/fonts/fonts.css);
+@import url(../blocks/widget.css);
+@import url(../blocks/news.css);
+
+.root {
+  margin: 0;
+  padding: 0;
+
+  /* Вставляем новостной виджет в родительский блок определенной ширины */
+  /* width: 350px; */
+  /* height: 300px; */
+  border: 1px solid #144242;
+
+  overflow-y: scroll;
+
+  color: #fff;
+  font-family: 'GTE', Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}

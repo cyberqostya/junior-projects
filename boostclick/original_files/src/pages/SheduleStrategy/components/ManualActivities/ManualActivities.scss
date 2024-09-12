@@ -1,0 +1,33 @@
+.manualactivities {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 70px 0;
+}
+
+.manualactivities__container {
+  display: flex;
+  column-gap: 30px;
+}
+
+.manualactivity {
+  display: flex;
+  align-items: flex-end;
+  max-width: 200px;
+}
+
+.manualactivity__predigit {
+  font-size: 30px;
+  line-height: 1;
+}
+
+.manualactivity__digit {
+  font-size: 40px;
+  line-height: 0.9;
+  font-weight: 800;
+  margin-left: 7px;
+}
+
+.manualactivity__text {
+  margin-left: 5px;
+}

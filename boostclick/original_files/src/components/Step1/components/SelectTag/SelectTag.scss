@@ -1,0 +1,27 @@
+@import 'src/utils';
+
+.select__tag {
+  border: 1px solid $yellow;
+  border-radius: 36px;
+  padding: 3px 10px;
+  position: relative;
+  cursor: default;
+}
+
+.select__tag-title {
+  color: $black;
+}
+
+.select__tag-close {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  width: 15px;
+  height: 15px;
+  background: center/contain url('~assets/images/tagclose.svg') no-repeat;
+  transition: all 0.4s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}

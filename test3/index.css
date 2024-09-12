@@ -1,0 +1,147 @@
+@font-face {
+  font-family: 'GTE';
+  src: url(fonts/GTEestiProDisplay-Light.woff2);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'GTE';
+  src: url(fonts/GTEestiProDisplay-Regular.woff2);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'GTE';
+  src: url(fonts/GTEestiProDisplay-Medium.woff2);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'GTE';
+  src: url(fonts/GTEestiProDisplay-Bold.woff2);
+  font-weight: 600;
+}
+.widget {
+  margin: 0.5em;
+  
+  background: #1c9e9e;
+}
+
+
+.widget__header {
+  margin: 0;
+  padding: 0.5em 0.8em;
+
+  background: #1b5959;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  cursor: pointer;
+}
+.widget__header-title {
+  margin: 0;
+  padding: 0;
+
+  font-size: 1.5em;
+  font-weight: 500;
+}
+.widget__header-count-unread-news {
+  margin: 0;
+  padding: 0;
+
+  width: 1.5em;
+  height: 1.5em;
+
+  border-radius: 50%;
+  background: #f21f5b;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.widget__news-container {
+  margin: 0;
+  padding: 0;
+
+  display: none;
+}
+.widget__news-container_opened {
+  display: block;
+}
+
+
+.widget__separator {
+  margin: 0 0.8em;
+
+  height: 1px;
+  background: #fff;
+  box-sizing: border-box;
+}
+.news {
+  margin: 0;
+  padding: 0.8em;
+
+  list-style-type: none;
+
+  transition: background-color .3s;
+}
+.news:hover {
+  background-color: #1d7a7a;
+}
+.news_read {
+  background: repeating-linear-gradient(-45deg, #1d7a7a 0, #1d7a7a 5px, transparent 0, transparent 10px);
+}
+
+.news__link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.news__title {
+  margin: 0;
+  padding: 0;
+}
+
+
+.news__text {
+  margin: 0.5em 0 0 0;
+  padding: 0;
+}
+
+
+.news__about-container {
+  margin: 0.5em 0 0 0;
+  padding: 0;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.news__author, .news__date {
+  margin: 0;
+  padding: 0;
+
+  font-style: italic;
+}
+
+.root {
+  margin: 0;
+  padding: 0;
+
+  /* Вставляем новостной виджет в родительский блок определенной ширины */
+  /* width: 350px; */
+  /* height: 300px; */
+  border: 1px solid #144242;
+
+  overflow-y: scroll;
+
+  color: #fff;
+  font-family: 'GTE', Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}

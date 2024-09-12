@@ -1,0 +1,16 @@
+@import "src/utils";
+
+.myprojects__title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 100px 0 60px;
+}
+
+.myprojects__title {
+  @extend %title;
+}
+
+.myprojects__table {
+  width: 100%;
+}

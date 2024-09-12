@@ -1,0 +1,30 @@
+@import "src/utils";
+
+.interactive__form-title {
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 57px;
+  margin-bottom: 40px;
+}
+
+.formstep__item-title {
+  @extend %liststyletype;
+  font-weight: 600;
+}
+
+.formstep__item {
+  margin-top: 40px;
+}
+
+.formstep__error {
+  position: absolute;
+  top: -15px;
+  left: 28px;
+  color: $red;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 300;
+}
+*:has(> .formstep__error) {
+  border-color: $red !important;
+}

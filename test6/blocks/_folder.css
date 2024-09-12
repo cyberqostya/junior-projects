@@ -1,0 +1,47 @@
+.folder {
+  padding-top: 5px;
+}
+
+
+.folder__input { display: none; }
+
+
+.folder__label {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  background: 16px/16px no-repeat url(../images/closed-folder.svg);
+  background-color: #fff;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 5px;
+}
+
+
+.folder__label::before {
+  content: '+';
+  width: 10px;
+  height: 10px;
+  margin-right: 25px;
+  border: 1px solid #777;
+  line-height: 11px;
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.folder__label::after {
+  content: '';
+  width: 7px;
+  height: 1px;
+  margin-top: -1px;
+  border-bottom: 1px dotted #777;
+  position: absolute;
+  left: 11px;
+  top: 50%;
+}
+.folder__input:checked + .folder__label { background-image: url(../images/opened-folder.svg); }
+.folder__input:checked + .folder__label::before { content: '-'; font-size: 12px; }
+.folder__input:checked ~ .list { display: block; }

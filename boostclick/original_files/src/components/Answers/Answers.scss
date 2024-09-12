@@ -1,0 +1,11 @@
+@import "src/utils";
+
+.answers {
+  padding-top: 100px;
+  margin-bottom: 90px;
+}
+
+.answers__title {
+  margin-bottom: 60px;
+  @extend %title;
+}

@@ -1,0 +1,30 @@
+.card__property-container {
+  margin-top: 18px;
+
+  display: grid;
+  grid-row-gap: 8px;
+  grid-column-gap: 16px;
+
+  width: fit-content;
+}
+
+
+@media screen and (min-width: 755px) {
+  .card__property-container {
+    grid-template-columns: auto auto;
+  }
+}
+
+
+@media screen and (min-width: 910px) {
+  .card__property-container {
+    grid-template-columns: auto;
+  }
+}
+
+
+@media screen and (min-width: 1120px) {
+  .card__property-container {
+    grid-template-columns: auto auto;
+  }
+}

@@ -1,0 +1,40 @@
+@import url(./vendor/fonts/fonts.css);
+@import url(./blocks/block.css);
+@import url(./blocks/block-title.css);
+@import url(./blocks/button.css);
+@import url(./blocks/text-link.css);
+@import url(./blocks/header.css);
+@import url(./blocks/intro.css);
+@import url(./blocks/about.css);
+@import url(./blocks/participation.css);
+@import url(./blocks/timing.css);
+@import url(./blocks/hackathons.css);
+@import url(./blocks/popup.css);
+@import url(./blocks/dvd.css);
+
+@import url(./blocks/dell.css);
+
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+.root {
+  position: relative;
+  
+  font-family: 'ALS',Arial, Helvetica, sans-serif;
+  color: #fff;
+
+  font-size: calc(100vw / 60); /* 32px при разрешении 1920 */
+
+  overflow: hidden;
+}
+
+
+@media screen and (max-width: 768px) {
+  .root {
+    font-size: 16px;
+  }
+}

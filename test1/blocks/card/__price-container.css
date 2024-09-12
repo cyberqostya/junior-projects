@@ -1,0 +1,38 @@
+.card__price-container {
+  margin: 20px 0 0;
+  padding: 20px 0 0;
+
+  border-top: 1px solid var(--gray-50);
+}
+
+
+@media screen and (min-width: 530px) {
+  .card__price-container {
+    grid-area: bottom;
+  }
+}
+
+
+@media screen and (min-width: 755px) {
+  .card__price-container {
+    margin: 24px 0 0;
+    padding: 24px 0 0;
+  }
+}
+
+
+@media screen and (min-width: 910px) {
+  .card__price-container {
+    margin: 0;
+    padding: 0 0 0 30px;
+
+    border-top: none;
+    border-left: 1px solid var(--gray-50);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    grid-area: auto;
+  }
+}

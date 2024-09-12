@@ -1,0 +1,36 @@
+@import "src/utils";
+
+.calendarfooter {
+  margin-top: $calendarcellsverticaldistance;
+}
+
+.calendarfooter__total-row {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  column-gap: $calendarcellsdistance;
+
+  p {
+    line-height: $calendarcellwidth;
+    margin-right: auto;
+    font-weight: 600;
+  }
+}
+
+.calendarfooter__column {
+  display: flex;
+  column-gap: $calendarcelldistance;
+}
+
+.calendarfooter__day-row {
+  display: flex;
+  justify-content: flex-end;
+  column-gap: $calendarcellsdistance;
+}
+
+.calendarfooter__day-column {
+  line-height: $calendarcellwidth;
+  margin-top: $calendarcellsdistance;
+  width: $calendarcelldistance * 2 + $calendarcellwidth * 3;
+  text-align: center;
+}

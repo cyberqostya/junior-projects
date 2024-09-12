@@ -1,0 +1,8 @@
+@use 'UI' as *;
+@import './assets//fonts/opensans/opensans.css';
+
+body {
+  background-color: $colorbackground;
+  margin: 0;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}

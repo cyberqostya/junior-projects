@@ -1,0 +1,13 @@
+.card__price-data {
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+
+.card__price-data_accent {
+  color: var(--blue-500);
+  font-weight: 500;
+}

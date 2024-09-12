@@ -1,0 +1,54 @@
+@font-face {
+  font-family: 'FuturaPT';
+  src: url(./FuturaPT/300/FuturaPT300.eot) format('eot'),
+    url(./FuturaPT/300/FuturaPT300.woff) format('woff'),
+    url(./FuturaPT/300/FuturaPT300.woff2) format('woff2'),
+    url(./FuturaPT/300/FuturaPT300.ttf) format('truetype');
+  font-style: normal;
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'FuturaPT';
+  src: url(./FuturaPT/400/FuturaPT400.eot) format('eot'),
+    url(./FuturaPT/400/FuturaPT400.woff) format('woff'),
+    url(./FuturaPT/400/FuturaPT400.woff2) format('woff2'),
+    url(./FuturaPT/400/FuturaPT400.ttf) format('truetype');
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'FuturaPT';
+  src: url(./FuturaPT/500/FuturaPT500.eot) format('eot'),
+    url(./FuturaPT/500/FuturaPT500.woff) format('woff'),
+    url(./FuturaPT/500/FuturaPT500.woff2) format('woff2'),
+    url(./FuturaPT/500/FuturaPT500.ttf) format('truetype');
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'FuturaPT';
+  src: url(./FuturaPT/600/FuturaPT600.eot) format('eot'),
+    url(./FuturaPT/600/FuturaPT600.woff) format('woff'),
+    url(./FuturaPT/600/FuturaPT600.woff2) format('woff2'),
+    url(./FuturaPT/600/FuturaPT600.ttf) format('truetype');
+  font-style: normal;
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'FuturaPT';
+  src: url(./FuturaPT/700/FuturaPT700.eot) format('eot'),
+    url(./FuturaPT/700/FuturaPT700.woff) format('woff'),
+    url(./FuturaPT/700/FuturaPT700.woff2) format('woff2'),
+    url(./FuturaPT/700/FuturaPT700.ttf) format('truetype');
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'FuturaPT';
+  src: url(./FuturaPT/800/FuturaPT800.eot) format('eot'),
+    url(./FuturaPT/800/FuturaPT800.woff) format('woff'),
+    url(./FuturaPT/800/FuturaPT800.woff2) format('woff2'),
+    url(./FuturaPT/800/FuturaPT800.ttf) format('truetype');
+  font-style: normal;
+  font-weight: 800;
+}

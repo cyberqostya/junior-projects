@@ -1,0 +1,21 @@
+@use '@var' as *;
+
+.text {
+  color: $color-gray-400;
+
+  width: 100%;
+
+  opacity: 0;
+  transition: all .2s;
+}
+
+.text_appeared {
+  opacity: 1;
+  padding: 56px 0 32px;
+}
+
+@media (max-width: 389px) {
+  .text {
+    padding: 4em 0;
+  }
+}

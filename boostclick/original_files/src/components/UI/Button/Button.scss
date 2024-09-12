@@ -1,0 +1,39 @@
+@import "src/utils.scss";
+
+.button {
+  border-radius: 10px;
+  border: 2px solid $yellow;
+  text-align: center;
+  padding: 0 50px;
+  width: fit-content;
+  display: block;
+
+  background-color: $yellow;
+  height: 60px;
+  transition: all 0.5s;
+  &:not(:disabled):hover {
+    background-color: #fff;
+  }
+
+  &.outlined {
+    background-color: transparent;
+    &:not(:disabled):hover {
+      background-color: $yellow;
+    }
+  }
+
+  &.small {
+    height: 46px;
+  }
+
+  &.wide {
+    width: 100%;
+  }
+
+  &:disabled {
+    background-color: $lightyellow;
+    border-color: $lightyellow;
+    cursor: not-allowed;
+    opacity: 0.4;
+  }
+}

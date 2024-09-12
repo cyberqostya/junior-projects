@@ -1,0 +1,29 @@
+.container {
+  padding: 32px 0;
+}
+
+.images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(clamp(90px, 31%, 204px), 1fr));
+  gap: 8px;
+}
+
+.button {
+  text-align: center;
+  margin-top: 32px;
+  height: 48px;
+
+  transition: height .2s, margin-top .2s;
+}
+
+.button_loading {
+  margin-top: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+@media (min-width: 1600px) {
+  .images {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+}

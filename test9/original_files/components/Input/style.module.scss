@@ -1,0 +1,26 @@
+@use '@var' as *;
+
+.wrapper {
+  background-color: $color-gray-100;
+  border-radius: $border-radius-s;
+  padding: 12px 8px;
+
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.input {
+  padding: 0 4px;
+  width: 100%;
+
+  &::placeholder {
+    color: $color-gray-300;
+  }
+}
+
+@media (max-width: 389px) {
+  .wrapper {
+    padding: .85em 0.57em;
+  }
+}

@@ -1,0 +1,13 @@
+.manualcalendar__column {
+  display: grid;
+  grid-template-columns: repeat(3, 33px);
+  grid-gap: 16px 10px;
+}
+
+.calendarbody {
+  display: flex;
+  justify-content: space-between;
+  height: 0;
+  overflow: hidden;
+  transition: all 0.4s;
+}

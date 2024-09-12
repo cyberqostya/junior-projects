@@ -1,0 +1,30 @@
+.block {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center left;
+
+  padding: 0 2.5em;
+
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+}
+.block:nth-child(2n) {
+  background-image: url(../vendor/images/background-even.jpg);
+}
+.block:nth-child(2n-1) {
+  background-image: url(../vendor/images/background-odd.jpg);
+}
+.block_mini-page:nth-child(2n) {
+  background-image: none;
+  background-color: #2E2FB2;
+  display: block;
+}
+
+
+@media screen and (max-width: 768px) {
+  .block {
+    padding: 2em 1em;
+  }
+}

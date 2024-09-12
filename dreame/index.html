@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Dreame">
+
+  <link type="text/css" rel="stylesheet" href="./css/main.css">
+
+  <!-- Плагины -->
+  <link rel="stylesheet" href="plugins/jquery.mCustomScrollbar.css" />
+
+  <title>Dreame</title>
+</head>
+
+<body>
+
+  <!-- Всплывающее окно -->
+  <section class="popup">
+      <div class="popup__window">
+        <button class="popup__close"><img src="./img/burger-close.svg" alt="popup-close" class="popup__close-icon"></button>
+        <h2 class="popup__title">Вы можете приобрести нашу продукцию в следующих магазинах:</h2>
+        <div class="popup__links-container">
+          <!-- Ссылки на маркеты -->
+        </div>
+      </div>
+  </section>
+
+  <header class="header">
+    <div class="header__logo"></div>
+    <nav class="header__nav">
+      <ul class="header__nav-list">
+        <li class="header__nav-list-item"><a href="#about-block" class="header__nav-link">О бренде</a></li>
+        <li class="header__nav-list-item"><a href="#choice-block" class="header__nav-link">Продукция</a></li>
+        <li class="header__nav-list-item header__nav-list-item_whereToBuy">Где купить</li>
+      </ul>
+      <button class="header__burger-close"><img src="./img/burger-close.svg" alt="burger-close" class="header__burger-close-icon"></button>
+    </nav>
+    <button class="header__burger"><img src="./img/burger.svg" alt="burger" class="header__burger-icon"></button>
+  </header>
+
+  <main class="main">
+
+
+    <section class="intro">
+      <video class="intro__video" muted autoplay loop>
+        <source src="./img/intro-video-background.mp4" type="video/mp4">
+      </video>
+      <h2 class="intro__subtitle">Лидеры рынка пылесосов</h2>
+      <h1 class="intro__title">DREAME</h1>
+      <p class="intro__text">Продукция, готовая к любым вызовам</p>
+      <a href="#models-block" class="intro__button-link"><button class="intro__button">Купить</button></a>
+      <img src="./img/intro-text.svg" alt="dreame" class="intro__image">
+    </section>
+
+
+    <section class="choice" id="choice-block">
+      <a href="#models-block" class="choice__button-link"><button class="choice__cleaner-button choice__cleaner-button_wireless">
+        <img src="./img/cleaner_wireless.png" alt="cleaner_wireless" class="choice__cleaner-button-image">
+        <h2 class="choice__cleaner-button-title choice__cleaner-button-title_wireless">Беспроводные пылесосы</h2>
+      </button></a>
+      <a href="#models-block" class="choice__button-link"><button class="choice__cleaner-button choice__cleaner-button_robot">
+        <img src="./img/cleaner_robot.png" alt="cleaner_robot" class="choice__cleaner-button-image">
+        <h2 class="choice__cleaner-button-title choice__cleaner-button-title_robot">Роботы пылесосы</h2>
+      </button></a>
+    </section>
+
+
+    <section class="models" id="models-block">
+      <div class="models__title">Все модели</div>
+      <div class="models__slider-road">
+        <!-- Карточки -->
+      </div>
+      <div class="models__slider-controllers-container"></div>
+    </section>
+
+
+    <section class="about" id="about-block">
+      <div class="about__vertical-slider-container">
+        <div class="about__slider-shadow about__slider-shadow_top"></div>
+        <div class="about__vertical-slider">
+          <h2 class="about__title">О бренде</h2>
+          <p class="about__text">Dreame Technology – ведущая компания по производству умной бытовой техники, специализирующаяся на производстве роботов-пылесосов и беспроводных ручных пылесосов. Мы постоянно совершенствуемся, внедряя инновации и передовые технологии, постепенно расширяя линейку нашей продукции.
+          </p>
+          <p class="about__text">Dreame Technology создала и запатентовала высокоскоростной двигатель, монокулярное машинное зрение, а также алгоритм SLAM (одновременная локализация и построение карты) и многоуровневую циклонную сепарацию воздуха. Эти инновационные технологии делают продукты бренда по-настоящему качественными и высокоэффективными.
+          </p>
+          <h2 class="about__title">История</h2>
+          <p class="about__text">Основателем и генеральным директором Dreame Technology является господин Юй Хао. Юй Хао с детства испытывал страсть к изобретению техники и в 2015 году начал свой бизнес, в котором стремился применять аэродинамические технологии в повседневной жизни.
+          </p>
+          <p class="about__text">Компания Dreame полностью изменила индустрию, применяя аэрокосмическую науку в создании техники для уборки дома.
+          </p>
+          <p class="about__text">После многих лет трудоемкой работы и исследовательской деятельности компания Dreame Technology создала серию основных изобретений и зарегистрировала более 150 патентов, многие из которых занимают лидирующие позиции в мире. 
+          </p>
+          <p class="about__text">В конце 2017 года Dreame присоединилась к экологической программе Xiaomi и стала ведущей компанией по производству умной бытовой техники.
+          </p>
+        </div>
+        <div class="about__slider-shadow about__slider-shadow_bottom"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__left-side">
+      <img src="./img/logo_black.svg" alt="logo" class="footer__logo">
+      <p class="footer__distributor">Официальным дистрибьютором Dreame является ООО «Марвел КТ» <a
+          class="footer__distributor_link" href="https://www.marvel.ru/" target="__blank">https://www.marvel.ru/</a></p>
+    </div>
+    <div class="footer__right-side">
+      <p class="footer__subscribe-title">Подписывайтесь</p>
+      <p class="footer__subscribe-text">чтобы получать последние новости о доступных товарах новых релизах и многом
+        другом.</p>
+      <form class="footer__form" name="footer__form">
+        <input type="text" class="footer__form-input" placeholder="Ваш e-mail">
+        <button class="footer__form-button">Подписаться</button>
+      </form>
+    </div>
+    <p class="footer__copyright">© 2013 – 2021, Марвел-Дистрибуция</p>
+  </footer>
+
+  <!-- Скрипты -->
+  <!-- Плагины -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="./plugins/jquery.mCustomScrollbar.concat.min.js"></script>
+  <!-- Данные о карточках -->
+  <script src="./js/cleanersData.js"></script>
+
+  <!-- Компоненты -->
+  <script src="./js/components/Popup.js"></script>
+  <script src="./js/components/Header.js"></script>
+  <script src="./js/components/ChoiceBlock.js"></script>
+  <script src="./js/components/Slider.js"></script>
+  <script src="./js/components/Card.js"></script>
+  <script src="./js/components/About.js"></script>
+
+  <!-- Работа -->
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

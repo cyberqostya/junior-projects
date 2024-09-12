@@ -1,0 +1,27 @@
+.list {
+  list-style-type: none;
+  padding-left: 18px;
+  position: relative;
+  display: none;
+}
+
+
+.list::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 1px;
+  border-left: 1px dotted #777;
+  top: 0;
+  left: 23px;
+}
+
+
+.list_first-level { padding: 0; display: block; }
+.list_first-level::before { left: 5px; }
+
+
+.list__item {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}

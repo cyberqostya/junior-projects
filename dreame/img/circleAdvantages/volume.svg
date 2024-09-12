@@ -1,0 +1,47 @@
+<svg width="174" height="174" viewBox="0 0 174 174" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="87.5" cy="86.5" r="84.5" stroke="black" stroke-width="4"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M69.0448 41C69.0152 41.3294 69 41.6629 69 42V44H54C50.134 44 47 47.134 47 51V129C47 132.866 50.134 136 54 136H122C125.866 136 129 132.866 129 129V51C129 47.134 125.866 44 122 44H108V42C108 41.6629 107.985 41.3294 107.955 41H122C127.523 41 132 45.4772 132 51V129C132 134.523 127.523 139 122 139H54C48.4772 139 44 134.523 44 129V51C44 45.4772 48.4772 41 54 41H69.0448Z" fill="black"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M76 31.7499C71.9026 33.35 69 37.336 69 42V76C69 82.0751 73.9249 87 80 87H97C103.075 87 108 82.0751 108 76V42C108 37.336 105.097 33.35 101 31.7499V35.0703C103.391 36.4535 105 39.0389 105 42V76C105 80.4183 101.418 84 97 84H80C75.5817 84 72 80.4183 72 76V42C72 39.0389 73.6088 36.4535 76 35.0703V31.7499Z" fill="black"/>
+<path d="M77.5 28C77.5 26.067 79.067 24.5 81 24.5H96C97.933 24.5 99.5 26.067 99.5 28V39.5H77.5V28Z" stroke="black" stroke-width="3"/>
+<circle cx="88.5" cy="61.5" r="10.5" stroke="black" stroke-width="4"/>
+<path d="M67 80L59 80M57 80L49 80" stroke="black" stroke-width="3"/>
+<path d="M67 91L59 91M57 91L49 91" stroke="black" stroke-width="3"/>
+<path d="M87 91L79 91M77 91L69 91" stroke="black" stroke-width="3"/>
+<path d="M107 91L99 91M97 91L89 91" stroke="black" stroke-width="3"/>
+<path d="M72 96L64 96M62 96L54 96" stroke="black" stroke-width="3"/>
+<path d="M92 96L84 96M82 96L74 96" stroke="black" stroke-width="3"/>
+<path d="M112 96L104 96M102 96L94 96" stroke="black" stroke-width="3"/>
+<path d="M67 101L59 101M57 101L49 101" stroke="black" stroke-width="3"/>
+<path d="M87 101L79 101M77 101L69 101" stroke="black" stroke-width="3"/>
+<path d="M107 101L99 101M97 101L89 101" stroke="black" stroke-width="3"/>
+<path d="M72 106L64 106M62 106L54 106" stroke="black" stroke-width="3"/>
+<path d="M92 106L84 106M82 106L74 106" stroke="black" stroke-width="3"/>
+<path d="M112 106L104 106M102 106L94 106" stroke="black" stroke-width="3"/>
+<path d="M67 111L59 111M57 111L49 111" stroke="black" stroke-width="3"/>
+<path d="M87 111L79 111M77 111L69 111" stroke="black" stroke-width="3"/>
+<path d="M107 111L99 111M97 111L89 111" stroke="black" stroke-width="3"/>
+<path d="M72 116L64 116M62 116L54 116" stroke="black" stroke-width="3"/>
+<path d="M92 116L84 116M82 116L74 116" stroke="black" stroke-width="3"/>
+<path d="M112 116L104 116M102 116L94 116" stroke="black" stroke-width="3"/>
+<path d="M67 121L59 121M57 121L49 121" stroke="black" stroke-width="3"/>
+<path d="M87 121L79 121M77 121L69 121" stroke="black" stroke-width="3"/>
+<path d="M107 121L99 121M97 121L89 121" stroke="black" stroke-width="3"/>
+<path d="M72 126L64 126M62 126L54 126" stroke="black" stroke-width="3"/>
+<path d="M92 126L84 126M82 126L74 126" stroke="black" stroke-width="3"/>
+<path d="M112 126L104 126M102 126L94 126" stroke="black" stroke-width="3"/>
+<path d="M67 131L59 131M57 131L49 131" stroke="black" stroke-width="3"/>
+<path d="M87 131L79 131M77 131L69 131" stroke="black" stroke-width="3"/>
+<path d="M107 131L99 131M97 131L89 131" stroke="black" stroke-width="3"/>
+<path d="M62 85.5L54 85.5" stroke="black" stroke-width="3"/>
+<path d="M122 85.5L114 85.5" stroke="black" stroke-width="3"/>
+<path d="M127 80L119 80M117 80L109 80" stroke="black" stroke-width="3"/>
+<path d="M127 91L119 91M117 91L109 91" stroke="black" stroke-width="3"/>
+<path d="M132 96L124 96M122 96L114 96" stroke="black" stroke-width="3"/>
+<path d="M127 101L119 101M117 101L109 101" stroke="black" stroke-width="3"/>
+<path d="M122 106L114 106M112 106L104 106" stroke="black" stroke-width="3"/>
+<path d="M127 111L119 111M117 111L109 111" stroke="black" stroke-width="3"/>
+<path d="M122 116L114 116M112 116L104 116" stroke="black" stroke-width="3"/>
+<path d="M127 121L119 121M117 121L109 121" stroke="black" stroke-width="3"/>
+<path d="M122 126L114 126M112 126L104 126" stroke="black" stroke-width="3"/>
+<path d="M127 131L119 131M117 131L109 131" stroke="black" stroke-width="3"/>
+</svg>

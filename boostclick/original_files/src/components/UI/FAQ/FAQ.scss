@@ -1,0 +1,14 @@
+.faq {
+  flex-shrink: 0;
+  position: relative;
+  width: 17px;
+  height: 17px;
+  background: center/contain url('../../../assets/images/faq.svg') no-repeat;
+}
+
+.faq__text {
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+  pointer-events: none;
+}

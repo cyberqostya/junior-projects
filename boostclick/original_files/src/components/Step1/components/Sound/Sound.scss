@@ -1,0 +1,221 @@
+@import "src/utils";
+
+.sound__container {
+  position: relative;
+  margin-top: 22px;
+}
+
+.sound__track {
+  display: grid;
+  grid-template-areas: "a b" "a c";
+  grid-gap: 6px 20px;
+  grid-template-columns: auto 1fr;
+}
+
+.sound__button {
+  width: 61px;
+  height: 61px;
+  background: center/contain url(../../../../assets/images/soundbutton.svg) no-repeat;
+  grid-area: a;
+  transition: all 0.5s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.sound__wave {
+  width: 184px;
+  height: 37px;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 2px;
+  grid-area: b;
+
+  & > div {
+    width: 4px;
+    height: 100%;
+    background-color: $black;
+    border-radius: 8px;
+
+    &:nth-child(1),
+    &:nth-child(4),
+    &:nth-child(7),
+    &:nth-child(9),
+    &:nth-child(12),
+    &:nth-child(15),
+    &:nth-child(17) {
+      transform: scaleY(0.2);
+      animation: quiet 0.9s ease-in-out infinite;
+      animation-play-state: paused;
+    }
+    &:nth-child(2),
+    &:nth-child(5),
+    &:nth-child(10),
+    &:nth-child(13),
+    &:nth-child(18),
+    &:nth-child(20) {
+      transform: scaleY(0.6);
+      animation: normal 1.2s ease-in-out infinite;
+      animation-play-state: paused;
+    }
+    &:nth-child(3),
+    &:nth-child(6),
+    &:nth-child(8),
+    &:nth-child(11),
+    &:nth-child(13),
+    &:nth-child(14),
+    &:nth-child(16),
+    &:nth-child(19) {
+      transform: scaleY(0.6);
+      animation: loud 1.4s ease-in-out infinite;
+      animation-play-state: paused;
+    }
+    &:nth-child(1) {
+      animation-delay: 0.1s;
+    }
+    &:nth-child(2) {
+      animation-delay: 0.2s;
+    }
+    &:nth-child(3) {
+      animation-delay: 0.3s;
+    }
+    &:nth-child(4) {
+      animation-delay: 0.4s;
+    }
+    &:nth-child(5) {
+      animation-delay: 0.3s;
+    }
+    &:nth-child(6) {
+      animation-delay: 0.2s;
+    }
+    &:nth-child(7) {
+      animation-delay: 0.1s;
+    }
+    &:nth-child(8) {
+      animation-delay: 0.2s;
+    }
+    &:nth-child(9) {
+      animation-delay: 0.3s;
+    }
+    &:nth-child(10) {
+      animation-delay: 0.4s;
+    }
+    &:nth-child(11) {
+      animation-delay: 0.3s;
+    }
+    &:nth-child(12) {
+      animation-delay: 0.2s;
+    }
+    &:nth-child(13) {
+      animation-delay: 0.1s;
+    }
+    &:nth-child(14) {
+      animation-delay: 0.2s;
+    }
+    &:nth-child(15) {
+      animation-delay: 0.3s;
+    }
+    &:nth-child(16) {
+      animation-delay: 0.2s;
+    }
+    &:nth-child(17) {
+      animation-delay: 0.1s;
+    }
+    &:nth-child(18) {
+      animation-delay: 0.3s;
+    }
+  }
+
+  &._active > div {
+    animation-play-state: running;
+  }
+}
+
+.sound__timing {
+  @extend %text;
+  grid-area: c;
+}
+
+.sound__about {
+  margin-top: 33px;
+  @extend %text;
+  font-style: italic;
+  position: relative;
+  padding-left: 20px;
+  font-weight: 600;
+
+  &::before {
+    content: "";
+    width: 14px;
+    height: 14px;
+    background: center/contain url(~assets/images/soundquotbef.svg) no-repeat;
+    position: absolute;
+    top: -6px;
+    left: 0;
+  }
+
+  &::after {
+    content: "";
+    width: 14px;
+    height: 14px;
+    background: center/contain url(~assets/images/soundquotaft.svg) no-repeat;
+    position: absolute;
+    bottom: -8px;
+    right: 26px;
+  }
+}
+
+.sound__circle {
+  position: absolute;
+
+  &._big {
+    width: 242px;
+    height: 242px;
+    background: center/contain url(~assets/images/soundcirclebig.svg) no-repeat;
+    bottom: 63px;
+    right: -84px;
+  }
+
+  &._small {
+    width: 118px;
+    height: 118px;
+    background: center/contain url(~assets/images/soundcirclesmall.svg) no-repeat;
+    bottom: -26px;
+    left: -63px;
+  }
+}
+
+@keyframes quiet {
+  25% {
+    transform: scaleY(0.1);
+  }
+  50% {
+    transform: scaleY(0.3);
+  }
+  75% {
+    transform: scaleY(0.5);
+  }
+}
+@keyframes normal {
+  25% {
+    transform: scaleY(0.3);
+  }
+  50% {
+    transform: scaleY(0.6);
+  }
+  75% {
+    transform: scaleY(0.7);
+  }
+}
+@keyframes loud {
+  25% {
+    transform: scaleY(0.4);
+  }
+  50% {
+    transform: scaleY(0.6);
+  }
+  75% {
+    transform: scaleY(1);
+  }
+}

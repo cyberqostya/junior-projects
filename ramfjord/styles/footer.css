@@ -1,0 +1,108 @@
+.footer {
+  background-color: #252330;
+  padding-top: 80px;
+  padding-bottom: 34px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  color: #fff;
+}
+
+.footer__left {
+  width: 33%;
+}
+
+.footer__form-link {
+  padding: 19px 26px;
+  color: #fff;
+  min-width: 280px;
+  box-sizing: border-box;
+}
+.footer__form-link_mobile { display: none; }
+
+.footer__phone {
+  margin: 23px 0 0;
+  font-size: 27px;
+  line-height: 34px;
+  display: block;
+}
+
+.footer__center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 33%;
+}
+
+.footer__right {
+  width: 33%;
+  text-align: right;
+}
+
+.footer__link {
+  text-decoration: underline;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  transition: opacity .4s;
+}
+.footer__link::before {
+  content: '';
+  display: block;
+  width: 18px;
+  height: 18px;
+  background: center/contain no-repeat;
+  margin-right: 15px;
+}
+.footer__link_inst {
+  margin-top: 22px;
+  text-decoration: none;
+}
+.footer__link_email::before { background-image: url(../images/email-icon.svg) }
+.footer__link_inst::before { background-image: url(../images/inst-logo.svg) }
+.footer__link:hover { opacity: .7 }
+
+.footer__address {
+  font-size: 15px;
+  line-height: 19px;
+  margin: 22px 0 0;
+}
+.footer__address-index { font-size: 20px; }
+
+.footer__line {
+  width: 100%;
+  margin: 57px 0 18px;
+}
+
+.footer__requisites {
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  color: #9C9C9C;
+  font-size: 14px;
+  line-height: 33px;
+}
+
+.footer__rights {
+  width: 100%;
+  margin: 4px 0 0;
+  text-align: center;
+  font-size: 12px;
+  line-height: 14px;
+  color: #9C9C9C;
+}
+
+
+@media screen and (max-width: 960px) {
+  .footer { padding-top: 55px; padding-bottom: 15px; }
+  .footer__center { order: 1; width: 100%; }
+  .footer__left { order: 2; width: 100%; text-align: center; margin-top: 40px; }
+  .footer__right { order: 3; width: 100%; text-align: center; }
+  .footer__link { justify-content: center; margin-top: 10px; }
+  .footer__form-link { display: none; }
+  .footer__form-link_mobile { display: inline-flex; margin-top: 27px; }
+
+  .footer__line { order: 4; margin: 50px 0 14px; }
+  .footer__requisites { order: 5; line-height: 20px; }
+  .footer__rights { order: 6; margin-top: 26px; }
+}

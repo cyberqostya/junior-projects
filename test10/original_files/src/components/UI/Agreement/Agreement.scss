@@ -1,0 +1,37 @@
+@use '../../../UI.scss' as *;
+
+.agreement {
+  display: flex;
+  cursor: pointer;
+
+  .agreement__checkbox {
+    border-radius: 4px;
+    border: 1px solid $colorblue800;
+    background-color: transparent;
+    box-sizing: border-box;
+    flex-shrink: 0;
+  }
+
+  &__checkbox._checked {
+    background: center/62% url(../../../assets/images/checked.svg) no-repeat;
+    background-color: $colorblue800;
+  }
+
+  &__checkbox-text {
+    @extend %fonttextsmall;
+    margin: 0;
+  
+    & a {
+      color: $colorblue800;
+    }
+  }
+}
+
+@media screen and (max-width: $breakpointmobile) {
+  .agreement {
+    .agreement__checkbox {
+      width: 16px;
+      height: 16px;
+    }
+  }
+}

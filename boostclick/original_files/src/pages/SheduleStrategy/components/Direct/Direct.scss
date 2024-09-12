@@ -1,0 +1,8 @@
+@import "src/utils";
+
+.direct__total {
+  margin-top: 60px;
+  display: grid;
+  grid-gap: 30px 40px;
+  grid-template-columns: 1fr 350px;
+}

@@ -1,0 +1,39 @@
+@import 'src/utils';
+
+.textinput__container {
+  position: relative;
+  width: 100%;
+}
+
+.textinput__erorr {
+  position: absolute;
+  top: -15px;
+  left: 28px;
+  color: $red;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 300;
+
+  & + .textinput {
+    border: 2px solid $red;
+  }
+}
+
+.textinput {
+  outline: $yellow;
+  background-color: $lightgrey;
+  padding: 14px 28px;
+  border: 2px solid $lightgrey;
+  border-radius: 10px;
+  width: 100%;
+  transition: all 0.3s;
+
+  &:focus {
+    border: 2px solid $yellow;
+  }
+
+  &::placeholder {
+    opacity: 0.35;
+    color: inherit;
+  }
+}

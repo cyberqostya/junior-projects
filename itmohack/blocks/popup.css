@@ -1,0 +1,163 @@
+.popup {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 5;
+
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+  width: 100vw;
+  height: 100vh;
+
+  background-color: rgba(0,0,0,.8);
+
+  font-size: 0.8em;
+
+  cursor: pointer;
+  color: #3949E7;
+}
+
+
+.popup__container {
+  padding: 2em;
+
+  background-color: #fff;
+  border-radius: 1em;
+
+  cursor: default;
+}
+
+
+.popup__title {
+  margin: 0 0 0.4em 0;
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+
+.popup__field {
+  margin: 0 0 1.2em 0;
+  position: relative;
+}
+
+
+.popup__field-input {
+  padding: 0 0 0.3em 0;
+  width: 100%;
+
+  background-color: transparent;
+  border-style: none;
+  border-bottom: 1px solid #3949E7;
+
+  font-size: 0.8em;
+  font-weight: 400;
+  color: inherit;
+
+  outline: none;
+}
+.popup__field-input::placeholder {
+  color: rgba(57, 73, 231, .3);
+}
+.popup__field-input:focus::placeholder {
+  color: transparent;
+}
+.popup__field-input_success {
+  border-bottom-color:#38C461;
+}
+.popup__field-input_failed {
+  border-bottom-color:#FF3448;
+}
+
+
+.popup__field-error {
+  position: absolute;
+  bottom: -1.4em;
+
+  font-size: 0.6em;
+  font-weight: 500;
+  color: #FF3448;
+}
+
+
+
+
+.popup__upload-label {
+  margin-top: 0.8em;
+  padding: 0 0.4em;
+  display: flex;
+  align-items: center;
+
+  font-size: 0.8em;
+
+  background-color: #3949E7;
+
+  cursor: pointer;
+
+  transition: opacity 0.3s;
+}
+.popup__upload-label:first-of-type {
+  margin-top: 1.8em;
+}
+.popup__upload-label:hover {
+  opacity: 0.8;
+}
+.popup__upload-label_success {
+  background-color: #38C461;
+}
+
+
+.popup__upload-input {
+  display: none;
+}
+
+
+.popup__upload-image {
+  padding: 0 0.4em 0 0;
+  width: 1em;
+  box-sizing: content-box;
+}
+
+
+.popup__upload-text {
+  padding: 0.3em 0 0.3em 0.4em;
+
+  border-left: 1px solid #fff;
+  color: #fff;
+}
+
+
+.popup__form-button {
+  margin: 1.8em auto 0;
+  padding: 0.3em 1em;
+  display: block;
+  color: #fff;
+
+  font-family: inherit;
+  font-size: 1em;
+
+  border-radius: 2em;
+  border: 1px solid #fff;
+
+  background-color: #F21F5B;
+
+  cursor: pointer;
+  outline: none;
+
+  transition: background-color .3s, color .3s;
+}
+.popup__form-button_disabled {
+  background-color: #fff;
+  border: 1px solid #F21F5B;
+  color: #F21F5B;
+
+  cursor: default;
+}
+
+
+@media screen and (max-width: 768px) {
+  .popup {
+    font-size: 1em;
+  }
+}

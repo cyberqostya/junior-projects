@@ -1,0 +1,13 @@
+.card__price-benefit {
+  margin: 12px 0 0;
+
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+
+.card__price-benefit_accent {
+  font-weight: 500;
+  color: var(--red-500);
+}

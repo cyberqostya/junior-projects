@@ -1,0 +1,61 @@
+@font-face {
+  font-family: 'Neumann';
+  src: url('./Neumann/Neumann.woff2') format('woff2'), 
+    url('./Neumann/Neumann.woff') format('woff'), 
+    url('./Neumann/Neumann.ttf') format('truetype'), 
+    url('./Neumann/Neumann.eot') format('eot'),
+    url('./Neumann/Neumann.svg') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+	font-family: 'MuseoSansCyrl';
+	src: url('./MuseoSansCyrl/museosanscyrl-100.eot'); /* IE 9 Compatibility Mode */
+	src: url('./MuseoSansCyrl/museosanscyrl-100.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('./MuseoSansCyrl/museosanscyrl-100.woff2') format('woff2'), /* Super Modern Browsers */
+		url('./MuseoSansCyrl/museosanscyrl-100.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('./MuseoSansCyrl/museosanscyrl-100.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('./MuseoSansCyrl/museosanscyrl-100.svg#museosanscyrl-100') format('svg'); /* Chrome < 4, Legacy iOS */
+  font-weight: 100;
+  }
+@font-face {
+	font-family: 'MuseoSansCyrl';
+	src: url('./MuseoSansCyrl/museosanscyrl-300.eot'); /* IE 9 Compatibility Mode */
+	src: url('./MuseoSansCyrl/museosanscyrl-300.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('./MuseoSansCyrl/museosanscyrl-300.woff2') format('woff2'), /* Super Modern Browsers */
+		url('./MuseoSansCyrl/museosanscyrl-300.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('./MuseoSansCyrl/museosanscyrl-300.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('./MuseoSansCyrl/museosanscyrl-300.svg#museosanscyrl-300') format('svg'); /* Chrome < 4, Legacy iOS */
+    font-weight: 300;
+  }
+@font-face {
+	font-family: 'MuseoSansCyrl';
+	src: url('./MuseoSansCyrl/museosanscyrl-500.eot'); /* IE 9 Compatibility Mode */
+	src: url('./MuseoSansCyrl/museosanscyrl-500.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('./MuseoSansCyrl/museosanscyrl-500.woff2') format('woff2'), /* Super Modern Browsers */
+		url('./MuseoSansCyrl/museosanscyrl-500.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('./MuseoSansCyrl/museosanscyrl-500.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('./MuseoSansCyrl/museosanscyrl-500.svg#museosanscyrl-500') format('svg'); /* Chrome < 4, Legacy iOS */
+    font-weight: 500;
+  }
+@font-face {
+	font-family: 'MuseoSansCyrl';
+	src: url('./MuseoSansCyrl/museosanscyrl-700.eot'); /* IE 9 Compatibility Mode */
+	src: url('./MuseoSansCyrl/museosanscyrl-700.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('./MuseoSansCyrl/museosanscyrl-700.woff2') format('woff2'), /* Super Modern Browsers */
+		url('./MuseoSansCyrl/museosanscyrl-700.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('./MuseoSansCyrl/museosanscyrl-700.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('./MuseoSansCyrl/museosanscyrl-700.svg#museosanscyrl-700') format('svg'); /* Chrome < 4, Legacy iOS */
+    font-weight: 700;
+  }
+@font-face {
+	font-family: 'MuseoSansCyrl';
+	src: url('./MuseoSansCyrl/museosanscyrl-900.eot'); /* IE 9 Compatibility Mode */
+	src: url('./MuseoSansCyrl/museosanscyrl-900.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('./MuseoSansCyrl/museosanscyrl-900.woff2') format('woff2'), /* Super Modern Browsers */
+		url('./MuseoSansCyrl/museosanscyrl-900.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('./MuseoSansCyrl/museosanscyrl-900.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('./MuseoSansCyrl/museosanscyrl-900.svg#museosanscyrl-900') format('svg'); /* Chrome < 4, Legacy iOS */
+    font-weight: 900;
+  }

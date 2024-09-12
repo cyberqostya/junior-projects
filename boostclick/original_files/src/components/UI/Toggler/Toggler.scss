@@ -1,0 +1,27 @@
+@import "src/utils";
+
+.toggler {
+  width: 49px;
+  height: 34px;
+  background-color: #cecece;
+  border-radius: 238px;
+  display: flex;
+  align-items: center;
+  padding: 0 3px;
+  transition: all 0.3s;
+}
+
+.toggler__thumb {
+  width: 28px;
+  height: 28px;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+
+.toggler._active {
+  background-color: $yellow;
+  & .toggler__thumb {
+    transform: translateX(15px);
+  }
+}

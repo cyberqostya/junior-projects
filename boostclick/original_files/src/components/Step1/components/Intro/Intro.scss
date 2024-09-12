@@ -1,0 +1,32 @@
+@import "src/utils";
+
+.main__intro {
+  margin-top: 130px;
+  display: grid;
+  grid-gap: 34px;
+  grid-template-columns: 1fr 515px;
+}
+
+.main__title {
+  font-weight: 800;
+  font-size: 60px;
+  line-height: 72px;
+  max-width: 560px;
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 258px;
+    height: 7px;
+    background-color: $black;
+    position: absolute;
+    bottom: 27px;
+    right: 17px;
+  }
+}
+
+.main__about {
+  margin-top: 30px;
+  @extend %text;
+  max-width: 520px;
+}

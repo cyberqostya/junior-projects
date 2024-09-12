@@ -1,0 +1,51 @@
+@import "src/utils";
+
+.formstep__phrase {
+  margin-top: 30px;
+}
+
+.formstep__phrase-container {
+  display: flex;
+  column-gap: 10px;
+  position: relative;
+}
+
+.formstep__phrase-button {
+  flex-shrink: 0;
+  width: 54px;
+  height: 54px;
+  background: center/20px $yellow url(~assets/images/addbutton.svg) no-repeat;
+  border-radius: 10px;
+}
+
+.formstep__phrase-tags {
+  display: flex;
+  flex-wrap: wrap;
+  grid-gap: 15px;
+}
+
+.formstep__phrase-sticker {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+
+  &._discount::after {
+    content: "";
+    width: 8px;
+    height: 8px;
+    background: center/contain url(~assets/images/discounttriangle.svg) no-repeat;
+  }
+
+  &._discount {
+    top: calc(-4px - 0.5em);
+    right: 94px;
+    color: #fff;
+    background: $green;
+    border-radius: 40px;
+    padding: 4px 17px;
+  }
+}

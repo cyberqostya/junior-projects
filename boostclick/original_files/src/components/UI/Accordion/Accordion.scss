@@ -1,0 +1,47 @@
+@import "src/utils";
+
+.accordion {
+  cursor: pointer;
+  overflow: hidden;
+
+  &:not(:only-of-type) {
+    border-bottom: 1px solid #d7e2e4;
+  }
+}
+
+.accordion__title {
+  font-size: 24px;
+  line-height: 1;
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &::after {
+    content: "";
+    width: 20px;
+    height: 8px;
+    background: center/contain url("~assets/images/accordion.svg") no-repeat;
+    transition: all 0.5s;
+  }
+}
+
+.accordion__text {
+  height: 0;
+  box-sizing: content-box;
+  transition: all 0.5s;
+
+  & p {
+    @extend %text;
+  }
+  & a {
+    color: $yellow;
+  }
+}
+
+// Анимация
+.accordion._active {
+  & .accordion__title::after {
+    transform: rotate3d(1, 0, 0, 180deg);
+  }
+}

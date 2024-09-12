@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "paths": {
+      "@/*": [
+        "./*"
+      ],
+      "@var": [
+        "./public/variables.scss"
+      ],
+      "@com/*": [
+        "./components/*"
+      ]
+    }
+  }
+}

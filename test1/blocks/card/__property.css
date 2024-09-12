@@ -1,0 +1,40 @@
+.card__property {
+  margin: 0;
+  padding: 8px 16px;
+
+  display: flex;
+
+  width: fit-content;
+
+  font-size: 12px;
+  line-height: 16px;
+  
+  border-radius: 22px;
+}
+.card__property::before {
+  content: '';
+
+  display: block;
+  margin-right: 8px;
+
+  width: 16px;
+  height: 16px;
+}
+
+
+.card__property_success {
+  color: var(--green-500);
+  background-color: var(--green-20);
+}
+.card__property_success::before {
+  background-image: url(../../images/success.svg);
+}
+
+
+.card__property_failed {
+  color: var(--red-500);
+  background-color: var(--red-20);
+}
+.card__property_failed::before {
+  background-image: url(../../images/failed.svg);
+}

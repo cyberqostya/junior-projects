@@ -1,0 +1,61 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+
+  padding: 0.5em 2.5em;
+
+  background-color: #2E2FB2;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-size: 1em;
+  font-weight: 500;
+}
+.header_mini-page {
+  position: relative;
+}
+
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+
+  width: 38%;
+
+  list-style-type: none;
+}
+
+
+.header__logo {
+  vertical-align: middle;
+  height: 1.5em;
+}
+
+
+.header__list-item {
+  cursor: pointer;
+
+  transition: color .3s;
+}
+.header__list-item:hover {
+  color: #F21F5B;
+}
+.header__list-item-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+@media screen and (max-width: 768px) {
+  .header {
+    justify-content: center;
+  }
+  .header__nav {
+    display: none;
+  }
+}

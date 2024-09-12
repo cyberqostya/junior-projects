@@ -1,0 +1,21 @@
+.text-link {
+  text-decoration: none;
+  color: #F21F5B;
+  font-weight: 500;
+
+  position: relative;
+}
+.text-link::after {
+  content: '';
+  position: absolute;
+  bottom: -0.1em;
+  left: 0;
+  background-color: #F21F5B;
+  width: 0;
+  height: 2px;
+
+  transition: width .3s;
+}
+.text-link:hover::after {
+  width: 100%;
+}

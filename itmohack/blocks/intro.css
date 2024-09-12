@@ -1,0 +1,55 @@
+.intro {
+  justify-content: center;
+}
+
+
+.intro__container {
+  position: relative;
+  top: 3em;
+  right: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  z-index: 1;
+}
+
+
+.intro__title {
+  font-size: 3.75em;
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 1em;
+}
+
+
+.intro__text {
+  margin-top: 2.3em;
+
+  width: 46vw;
+
+  text-align: center;
+}
+
+
+.intro__button {
+  margin-top: 4em;
+}
+
+
+@media screen and (max-width: 768px) {
+  .intro__container{
+    margin: 10em 0 8em 0;
+    top: 0;
+  }
+  .intro__title {
+    font-size: 3em;
+  }
+  .intro__text {
+    width: auto;
+  }
+  .intro__button {
+    display: none;
+  }
+}

@@ -1,0 +1,27 @@
+@import "src/utils";
+
+.calendarcell {
+  width: $calendarcellwidth;
+  height: $calendarcellwidth;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  transition: all 0.4s;
+  border: 2px solid rgba(30, 30, 30, 0.3);
+  flex-shrink: 0;
+  color: rgba(30, 30, 30, 0.3);
+
+  &._active {
+    background-color: $green;
+    border-color: $green;
+    color: #fff;
+  }
+
+  &._total {
+    background-color: $yellow;
+    border-color: $yellow;
+    color: $black;
+    cursor: default;
+  }
+}

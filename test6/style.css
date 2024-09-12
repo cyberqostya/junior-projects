@@ -1,0 +1,13 @@
+@import url(./blocks/_file.css);
+@import url(./blocks/_list.css);
+@import url(./blocks/_folder.css);
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

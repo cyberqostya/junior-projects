@@ -1,0 +1,171 @@
+@use '../../UI.scss' as *;
+
+.main {
+  @include block;
+  margin-top: 40px;
+
+  &__inner {
+    background-color: $colorwhite;
+    padding: 40px 32px 16px;
+    box-shadow: 0px 2px 8px rgba(15, 85, 126, 0.04), 4px 4px 8px rgba(18, 102, 152, 0.08);
+    border-radius: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  &__title {
+    margin: 0 0 40px;
+    width: 100%;
+    color: $colorgrey500;
+  }
+
+  &__form {
+    width: 59%;
+
+    &-title {
+      @extend %fonttitleh3;
+      margin: 0;
+    }
+
+    &-text {
+      margin: 12px 0 0;
+    }
+  }
+
+  &__input-field {
+    margin: 8px 0 40px;
+    display: flex;
+    grid-gap: 16px;
+  }
+
+  &__aside {
+    width: 32%;
+  }
+
+  &__accordion {
+    margin-top: 24px;
+  }
+
+  &__form-end {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+
+    &-text {
+      @extend %fonttextbig;
+      font-weight: 700;
+      margin: 0;
+      color: $colorgrey500;
+    }
+
+    &-price-container {
+      min-width: 135px;
+      flex-shrink: 0;
+    }
+
+    &-price {
+      @extend %fonttitleh2;
+      color: $colorblue800;
+      margin: 4px 0 0;
+
+      & span {
+        @extend %fonttitleh3;
+      }
+    }
+
+    &-agreement-container {
+      max-width: 362px;
+    }
+
+    &-agreement {
+      margin-top: 10px;
+      .agreement__checkbox {
+        width: 16px;
+        height: 16px;
+        margin-right: 8px;
+      }
+      .agreement__checkbox-text {
+        font-size: 10px;
+        line-height: 12px;
+      }
+    }
+  }
+
+  &__form-button {
+    width: 100%;
+  }
+
+  &__needhelp-title {
+    @extend %fonttextbig;
+    color: $colorgrey500;
+    margin: 40px 0 0;
+  }
+
+  &__needhelp-phone {
+    @extend %fonttitleh3;
+    color: $colorblue800;
+    margin: 8px 0 0;
+    text-decoration: none;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .main {
+    &__inner {
+      flex-direction: column;
+    }
+
+    &__form {
+      width: 100%;
+      order: 1;
+      margin-top: 40px;
+    }
+
+    &__aside {
+      width: 100%;
+    }
+
+    &__needhelp-title {
+      display: inline-block;
+      margin: 28px 8px 0 0;
+    }
+  }
+}
+
+@media screen and (max-width: $breakpointmobile) {
+  .main {
+    &__inner {
+      padding: 40px 16px;
+    }
+
+    &__title {
+      margin-bottom: 24px;
+      font-size: 20px;
+      line-height: 24px;
+    }
+
+    &__needhelp-title {
+      display: block;
+      margin: 24px 0 0;
+    }
+
+    &__input-field {
+      flex-direction: column;
+    }
+
+    &__form-end {
+      flex-direction: column;
+
+      &-agreement-container {
+        margin-top: 15px;
+      }
+
+      &-agreement {
+        max-width: 230px;
+      }
+    }
+  }
+}

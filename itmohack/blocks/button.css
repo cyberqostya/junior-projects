@@ -1,0 +1,23 @@
+.button {
+  padding: 0.6em 1.87em;
+
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+
+  border-radius: 2.2em;
+  border-style: none;
+
+  background-color: #F21F5B;
+
+  cursor: pointer;
+  outline: none;
+
+  transition: background-color .3s, color .3s;
+
+  z-index: 3;
+}
+.button:hover {
+  background-color: #fff;
+  color: #F21F5B;
+}

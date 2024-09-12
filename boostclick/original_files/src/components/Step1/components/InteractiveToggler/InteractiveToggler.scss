@@ -1,0 +1,24 @@
+@import "src/utils";
+
+.interactivetoggler {
+  margin-top: 10px;
+  display: flex;
+  column-gap: 12px;
+  align-items: center;
+}
+
+.interactivetoggler__title {
+  max-width: 190px;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.interactivetoggler__price {
+  color: #fff;
+  padding: 10px 23px;
+  line-height: 14px;
+  font-size: 12px;
+  border-radius: 41px;
+  background-color: $green;
+  margin-left: auto;
+}

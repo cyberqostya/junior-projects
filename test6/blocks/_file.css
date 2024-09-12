@@ -1,0 +1,22 @@
+.file { 
+  background: 1px/15px no-repeat url(../images/file.svg); 
+  padding-left: 19px;
+  margin-left: 15px;
+  position: relative;
+}
+
+
+.file::before {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 50%;
+  border-top: 1px dotted #777;
+  margin-top: -1px;
+  left: -10px;
+  top: 50%;
+  background-color: #fff;
+}
+
+
+.file:not(:only-child):not(:last-child):before { background-color: transparent; }

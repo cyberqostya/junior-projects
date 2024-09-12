@@ -1,0 +1,53 @@
+.approach {
+  color: #fff;
+  background-color: #252330;
+  padding-top: 127px;
+  padding-bottom: 145px;
+}
+
+.approach__title {
+  text-align: center;
+  margin: 0;
+}
+
+.approach__subtitle {
+  text-align: center;
+  margin: 27px auto 0;
+  max-width: 721px;;
+}
+
+.approach__advantages {
+  margin: 110px auto 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+}
+
+.approach__advantage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 250px;
+}
+
+@media screen and (max-width: 995px) {
+  .approach__advantages {
+    justify-content: center;
+    grid-gap: 15px;
+  }
+  .approach__advantage {
+    max-width: 200px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .approach {
+    color: #fff;
+    background-color: #252330;
+    padding-top: 90px;
+  }
+  .approach__advantages {
+    margin-top: 90px;
+  }
+}

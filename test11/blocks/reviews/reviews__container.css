@@ -1,0 +1,7 @@
+.reviews__container {
+  margin: 30px 0 0;
+  position: relative;
+  height: auto;
+  overflow: hidden;
+  width: 100%;
+}

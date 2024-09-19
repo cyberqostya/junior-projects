@@ -1,0 +1,10 @@
+@import url(./about__contact/about__contact.css);
+@import url(./about__aim/about__aim.css);
+
+.about {
+    font-family: Comfortaa;
+    font-size: 20px;
+    position: relative;
+    z-index: 2;
+    max-width: 500px;
+}

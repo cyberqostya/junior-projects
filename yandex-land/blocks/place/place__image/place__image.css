@@ -1,0 +1,17 @@
+﻿.place__image {
+	width: 100%;
+	object-fit: cover;
+	max-width: 435px;
+}
+
+@media screen and (max-width: 767px) {
+	.place__image {
+		margin-top: 32px;
+	}
+}
+
+@media screen and (min-width: 450px) and (max-width: 767px) {
+	.place__image {
+		margin-left: 16px;
+	}
+}

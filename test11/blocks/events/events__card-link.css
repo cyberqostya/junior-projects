@@ -1,0 +1,12 @@
+.events__card-link {
+  font-family: inherit;
+  margin: 13px auto 0;
+  color: rgba(0,0,0,.7);
+  font-weight: 400;
+  font-size: 11px;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(0,0,0,.7);
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+}

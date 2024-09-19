@@ -1,0 +1,16 @@
+.main__image-container {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: flex-end;
+  width: 60vw;
+}
+
+@media screen and (max-width: 768px) {
+  .main__image-container {
+    top: 0;
+    align-items: flex-start;
+    width: 80vw;
+  }
+}

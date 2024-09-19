@@ -1,0 +1,21 @@
+@import url(./videos__title.css);
+@import url(./videos__card.css);
+@import url(./videos__card-top-part.css);
+@import url(./videos__card-bottom-part.css);
+@import url(./videos__card-title.css);
+@import url(./videos__card-author.css);
+@import url(./videos__button.css);
+
+.videos {
+  margin: 50px 0 0;
+  padding: 0 20px;
+  border-top: 1px solid transparent;
+
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .videos {
+    display: block;
+  }
+}

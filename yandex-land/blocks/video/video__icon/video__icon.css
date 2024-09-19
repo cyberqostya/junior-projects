@@ -1,0 +1,19 @@
+﻿.video__icon {
+	position: absolute;
+	top: 30px;
+	left: 30px;
+}
+
+@media screen and (max-width: 374px) {
+	.video__icon {
+		top: 16px;
+		left: 16px;
+	}
+}
+
+@media screen and (min-width: 375px) and (max-width: 1023px) {
+	.video__icon {
+		top: 24px;
+		left: 24px;
+	}
+}

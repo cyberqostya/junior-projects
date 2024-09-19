@@ -1,0 +1,23 @@
+.portfolio__button {
+  text-decoration: none;
+  margin-top: 20px;
+  padding: 8px 15px;
+  font-size: 18px;
+  color: #fff;
+  border: 2px solid #2f80ed;
+  background: none;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.portfolio__work:hover .portfolio__button {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media screen and (max-width: 1035px) {
+  .portfolio__button {
+    display: none;
+  }
+}

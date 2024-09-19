@@ -1,0 +1,9 @@
+.divide__line {
+  background: url(../../../images/pulse.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100px;
+  position: relative;
+  z-index: 2;
+}

@@ -1,0 +1,63 @@
+@import url(../blocks/title_hf/title_hf.css);
+@import url(../blocks/title/title.css);
+@import url(../blocks/text/text.css);
+@import url(../blocks/header/header.css);
+@import url(../blocks/gallery/gallery.css);
+@import url(../blocks/banner/banner.css);
+@import url(../blocks/statistics/statistics.css);
+@import url(../blocks/footer/footer.css);
+@import url(../blocks/copyright/copyright.css);
+@import url(../blocks/button/button.css);
+@import url(../blocks/popup/popup.css);
+@import url(../blocks/achievement/achievement.css);
+@import url(../blocks/continue/continue.css);
+@import url(../blocks/animation/animation.css);
+
+@font-face {
+    src: url(../fonts/Robotolight.woff2);
+    font-family: Roboto;
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    src: url(../fonts/Roboto.woff2);
+    font-family: Roboto;
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    src: url(../fonts/Robotomedium.woff2);
+    font-family: Roboto;
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    src: url(../fonts/Robotobold.woff2);
+    font-family: Roboto;
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    src: url(../fonts/ComicItalic.woff2);
+    font-family: Comics;
+    font-weight: 600;
+    font-style: italic;
+}
+@font-face {
+    src: url(../fonts/ComicItalicBold.woff2);
+    font-family: Comics;
+    font-weight: 800;
+    font-style: italic;
+}
+
+body {
+}
+
+.body {
+    overflow: hidden;
+}
+
+.content {
+    margin: auto;
+    width: 1400px;
+}

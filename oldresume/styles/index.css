@@ -1,0 +1,45 @@
+@import url(../blocks/text/text.css);
+@import url(../blocks/divide/divide.css);
+@import url(../blocks/portfolio/portfolio.css);
+@import url(../blocks/header/header.css);
+@import url(../blocks/intro/intro.css);
+@import url(../blocks/avatar/avatar.css);
+@import url(../blocks/about/about.css);
+@import url(../blocks/title/title.css);
+@import url(../blocks/content__block/content__block.css);
+@import url(../blocks/skills/skills.css);
+@import url(../blocks/foursquare/foursquare.css);
+
+
+@font-face {
+    font-family: Comfortaa;
+    font-weight: 300;
+    src: url(../fonts/comfortaa300.woff2);
+}
+@font-face {
+    font-family: Comfortaa;
+    font-weight: 500;
+    src: url(../fonts/comfortaa500.woff2);
+}
+@font-face {
+    font-family: Comfortaa;
+    font-weight: 700;
+    src: url(../fonts/comfortaa700.woff2);
+}
+
+body {
+    background-color: #f2f2f2;
+}
+
+.content {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 60px 30px;
+    min-width: 375px;
+    max-width: 1030px;
+    min-height: 1550px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}

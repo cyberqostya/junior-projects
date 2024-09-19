@@ -1,0 +1,27 @@
+@import url(./tariffs__card.css);
+@import url(./tariffs__card-title.css);
+@import url(./tariffs__card-subtitle.css);
+@import url(./tariffs__card-coupon-container.css);
+@import url(./tariffs__card-coupon.css);
+@import url(./tariffs__card-coupon-image.css);
+@import url(./tariffs__card-coupon-title.css);
+@import url(./tariffs__card-coupon-price.css);
+@import url(./tariffs__card-coupon-button.css);
+@import url(./tariffs__line.css);
+
+.tariffs {
+  margin: 50px 0 0;
+  padding: 0 35px 30px;
+  background-color: #f8f8f8;
+  border-top: 1px solid transparent;
+  box-sizing: border-box;
+  width: 100%;
+
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .tariffs {
+    display: block;
+  }
+}

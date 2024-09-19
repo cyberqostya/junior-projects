@@ -1,0 +1,46 @@
+@import url(./popup__window.css);
+@import url(./popup__title.css);
+@import url(./popup__form.css);
+@import url(./popup__form-input.css);
+@import url(./popup__form-button.css);
+@import url(./popup__personal.css);
+@import url(./popup__personal-link.css);
+@import url(./popup__exit.css);
+@import url(./popup__claims-container.css);
+@import url(./popup__claim.css);
+@import url(./popup__thankyou-for-buy.css);
+@import url(./popup__thankyou-for-send.css);
+@import url(./popup_thankyou-for-send-image.css);
+@import url(./popup__window-shell.css);
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(200,200,200,.7);
+  z-index: 4;
+
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+.popup_active {
+  display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  .popup {
+    padding: 20px;
+    background-color: #fff;
+    position: relative;
+    width: calc(100% - 40px);
+    height: auto;
+  }
+
+  .popup_active {
+    display: block;
+  }
+}

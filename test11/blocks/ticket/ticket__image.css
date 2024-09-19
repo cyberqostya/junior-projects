@@ -1,0 +1,14 @@
+.ticket__image {
+  margin: 20px 0 0;
+  width: 100%;
+  object-fit: contain;
+}
+
+
+@media screen and (max-width: 768px) {
+  .ticket__image {
+    max-width: 300px;
+    display: block;
+    margin: 20px auto 0;
+  }
+}

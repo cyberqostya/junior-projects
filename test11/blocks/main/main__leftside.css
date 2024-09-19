@@ -1,0 +1,19 @@
+.main__leftside {
+  margin: 70px 0 0;
+  position: relative;
+  z-index: 3;
+  height: calc(100% - 70px);
+}
+
+@media screen and (max-width: 768px) {
+  .main__leftside {
+    margin: 220px 0 0;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 768px)  {
+  .main__leftside {
+    margin: 350px 0 0;
+  }
+}

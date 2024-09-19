@@ -1,0 +1,27 @@
+﻿.place__text {
+	margin: 0 0 36px;
+	width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+	.place__text {
+		width: calc(100% - 16px*2);
+		margin: 24px 16px 0;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+	.place__text {
+		margin: 0 0 24px;
+	}
+
+	.place__text:last-of-type {
+		margin: 0;
+	}
+}
+
+@media screen and (min-width: 1280px) {
+	.place__text:last-of-type {
+		margin: 0;
+	}
+}

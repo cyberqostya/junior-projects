@@ -1,0 +1,10 @@
+.footer__link {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  color: #000;
+  border-bottom: 1px solid #000;
+  text-decoration: none;
+  margin: 8px 0 0;
+  display: block;
+  width: fit-content;
+}

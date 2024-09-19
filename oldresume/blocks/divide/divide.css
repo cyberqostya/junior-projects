@@ -1,0 +1,7 @@
+@import url(./divide__line/divide__line.css);
+@import url(./divide__back/divide__back.css);
+
+.divide {
+  position: relative;
+  overflow: hidden;
+}

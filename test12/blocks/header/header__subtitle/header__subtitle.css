@@ -1,0 +1,18 @@
+.header__subtitle {
+    font-family: Roboto;
+    font-weight: 800;
+    color: #fff;
+    font-size: 63px;
+    margin-top: 198px;
+    letter-spacing: 2.52px;
+    text-transform: uppercase;
+    align-self: flex-start;
+    margin-left: 220px;
+}
+
+.header__subtitle_span {
+    display: block;
+    font-size: 23px;
+    letter-spacing: 0.92px;
+    color: #b7b7b7;
+}

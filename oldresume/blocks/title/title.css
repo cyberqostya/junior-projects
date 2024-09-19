@@ -1,0 +1,15 @@
+.title {
+    font-family: Comfortaa;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: default;
+    color: #2f80ed;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 767px) {
+    .title {
+        font-size: 22px;
+    }
+}

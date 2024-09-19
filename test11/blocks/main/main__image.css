@@ -1,0 +1,6 @@
+.main__image {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  top: 50px;
+}

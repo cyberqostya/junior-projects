@@ -1,0 +1,7 @@
+.content__block {
+    margin-top: 60px;
+    font-family: Comfortaa;
+    font-size: 20px;
+    position: relative;
+    z-index: 2;
+}

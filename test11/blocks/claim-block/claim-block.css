@@ -1,0 +1,15 @@
+@import url(./claim-block__title.css);
+@import url(./claim-block__line.css);
+@import url(./claim-block__text.css);
+
+.claim-block {
+  color: #fff;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .claim-block {
+    display: block;
+  }
+}

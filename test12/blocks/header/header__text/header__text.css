@@ -1,0 +1,12 @@
+.header__text {
+    font-family: Roboto;
+    font-weight: 200;
+    color: #fff;
+    font-size: 14px;
+    margin-top: 10px;
+    letter-spacing: 0.84px;
+    line-height: 21px;
+    width: 500px;
+    align-self: flex-start;
+    margin-left: 220px;
+}

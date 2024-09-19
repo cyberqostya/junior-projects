@@ -1,0 +1,22 @@
+@import url(./ticket__title.css);
+@import url(./ticket__image.css);
+@import url(./ticket__button.css);
+@import url(./ticket__about-container.css);
+@import url(./ticket__about.css);
+@import url(./ticket__about-title.css);
+@import url(./ticket__about-subtitle.css);
+
+.ticket {
+  margin: 50px 0 0;
+  padding: 0 20px;
+  width: 100%;
+  box-sizing: border-box;
+
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .ticket {
+    display: block;
+  }
+}

@@ -1,0 +1,39 @@
+.popup__window {
+  padding: 50px;
+  width: 100%;
+  height: auto;
+  min-height: 500px;
+  box-sizing: border-box;
+  position: relative;
+
+  border-radius: 20px;
+  border: 1px solid #aaa;
+}
+
+.popup__window_buy {
+  background-color: #fff;
+}
+
+.popup__window_send {
+  padding: 50px 25px;
+  background-color: #000;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .popup__window {
+    padding: 20px;
+    height: auto;
+    min-height: 100%;
+    top: 0;
+    border: none;
+  }
+
+  .popup__window_buy {
+    padding: 0;
+  }
+}

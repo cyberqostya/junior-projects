@@ -1,0 +1,13 @@
+.header__job {
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 767px) {
+    .header__job {
+        font-size: 18px;
+        line-height: 20px;
+    }
+}

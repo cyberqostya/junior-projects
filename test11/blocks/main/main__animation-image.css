@@ -1,0 +1,14 @@
+.main__animation-image {
+  position: absolute;
+  top: -1000px;
+  right: 200px;
+  transform: rotate(-55deg);
+  z-index: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .main__animation-image {
+    top: -90px;
+    right: -30px;
+  }
+}

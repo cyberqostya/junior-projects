@@ -1,0 +1,8 @@
+.about__image-container {
+  width: 210px;
+  background-image: url(../../images/elipse.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+  margin: 30px auto 0;
+}

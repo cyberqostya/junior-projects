@@ -1,0 +1,228 @@
+/*   ----------   GALLERY   ----------   */
+
+.gallery {
+    display: none;
+}
+.gallery__container {
+    position: relative;
+}
+.gallery__intro, .gallery__grid, .gallery__image-out {
+    position: relative;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.gallery_animation {
+    display: flex;
+}
+.gallery__intro_animation {
+    animation: gallery__intro 1.5s ease;
+}
+@keyframes gallery__intro {
+    0%{left: -220px;}
+    100%{left: 0; opacity: 1;}
+}
+.gallery__grid_animation {
+    animation: gallery__grid 1.2s ease;
+    animation-delay: 0.5s;
+}
+@keyframes gallery__grid {
+    0%{left: -110px;}
+    100%{left: 0; opacity: 1;}
+}
+.gallery__image-out_animation {
+    animation: gallery__image-out 1s ease;
+    animation-delay: 0.8s;
+}
+@keyframes gallery__image-out {
+    0%{bottom: -300px;}
+    100%{bottom: 0; opacity: 1;}
+}
+.gallery__intro_animation, .gallery__grid_animation, .gallery__image-out_animation {
+    animation-fill-mode: forwards;
+    pointer-events: all;
+}
+
+
+/*   ----------   BUTTONS   ----------   */
+
+.continue_gallery-to-banner, .continue_banner-to-statistics, .continue_statistics-to-footer {
+    pointer-events: none;
+    transform: scale(10);
+    opacity: 0;
+}
+.continue_animation {
+    animation: continue 0.6s ease;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes continue {
+    100%{transform: scale(1); opacity: 1; pointer-events: all;}
+}
+
+.delete {
+    animation: delete .6s ease;
+    animation-fill-mode: forwards;
+    pointer-events: none;
+    opacity: 1;
+}
+@keyframes delete {
+    0%{transform: scale(1);}
+    100%{transform: scale(0);}
+}
+
+
+/*   ----------   BUNNER/FOOTER   ----------   */
+
+.banner, .footer {
+    display: none;
+}
+.banner, .banner__button, .banner__text, .footer, .footer__button, .footer__text {
+    position: relative;
+    opacity: 0;
+    pointer-events: none;
+    border: none;
+}
+.banner__button::before {
+    transform: scaleX(0);
+}
+
+.banner_animation, .footer_animation {
+    display: flex;
+    animation: banner-footer .7s ease;
+}
+@keyframes banner-footer {
+    100%{opacity: 1;}
+}
+.banner__button_animation, .footer__button_animation {
+    top: -20px;
+    animation: banner-footer__button .7s ease, pickme 5s 6s infinite;
+    animation-delay: .6s;
+}
+@keyframes banner-footer__button {
+    100%{opacity: 1; top: 0;}
+}
+.banner__text_animation, .footer__text_animation {
+    top: 20px;
+    animation: banner-footer__text .7s ease;
+    animation-delay: .6s;
+}
+@keyframes banner-footer__text {
+    100%{opacity: 1; top:0;}
+}
+.banner_animation, .banner__button_animation, .banner__text_animation, .footer_animation, .footer__button_animation, .footer__text_animation {
+    pointer-events: all;
+    animation-fill-mode: forwards;
+}
+
+
+.banner__button_animation::before, .footer__button_animation::before {
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    animation: banner__button-before 1s 1.1s;
+    transform: scaleX(0);
+}
+@keyframes banner__button-before {
+    100%{transform: scaleX(1.1);}
+}
+.banner__button_animation::after, .footer__button_animation::after {
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    animation: banner__button-after 1s 1.1s;
+    transform: scaleY(0);
+}
+@keyframes banner__button-after {
+    100%{transform: scaleY(1.2);}
+}
+.banner__button_animation::before, .banner__button_animation::after, .footer__button_animation::before, .footer__button_animation::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    animation-fill-mode: forwards;
+}
+
+
+/*   ----------   STATISTICS   ----------   */
+
+.statistics {
+    display: none;
+}
+.statistics__title, .statistics__subtitle, .statistics__text, .statistics__container {
+    position: relative;
+    pointer-events: none;
+    opacity: 0;
+}
+.statistics__data {
+    pointer-events: none;
+    transform: scale(0);
+}
+
+.statistics_animation {
+    display: block;
+}
+.statistics__title_animation {
+    animation: statistics__title 1s ease .8;
+    top: -30px;
+}
+@keyframes statistics__title {
+    100%{opacity: 1; top: 0}
+}
+.statistics__subtitle_animation {
+    animation: statistics__subtitle .8s ease .4s;
+    left: -50px;
+}
+@keyframes statistics__subtitle {
+    100%{opacity: 1; left: 0}
+}
+.statistics__text_animation {
+    animation: statistics__text .8s ease .4s;
+    right: -50px;
+}
+@keyframes statistics__text {
+    100%{opacity: 1; right: 0}
+}
+.statistics__container_animation {
+    animation: statistics__container .8s ease 1s;
+}
+@keyframes statistics__container {
+    100%{opacity: 1;}
+}
+.statistics__data_animation {
+    animation: statistics__data 1.2s ease 1s;
+}
+@keyframes statistics__data {
+    100%{transform: scale(1);}
+}
+.statistics__title_animation, .statistics__subtitle_animation, .statistics__text_animation, .statistics__container_animation, .statistics__data_animation {
+    animation-fill-mode: forwards;
+    pointer-events: all;
+}
+
+
+/*   ----------   FOOTER   ----------   */
+
+.footer__button_animation::before {
+    animation: footer__button-before 1s 1.1s;
+}
+@keyframes footer__button-before {
+    100%{transform: scaleX(1.055);}
+}
+.footer__button_animation::after {
+    animation: footer__button-after 1s 1.1s;
+}
+@keyframes footer__button-after {
+    100%{transform: scaleY(1.3);}
+}
+.footer__button_animation::after, .footer__button_animation::before {
+    animation-fill-mode: forwards;
+}
+
+@keyframes pickme {
+    80%{box-shadow: none;}
+    90%{box-shadow: 0 0 12px 7px #fff;}
+    100%{box-shadow: none;}
+}

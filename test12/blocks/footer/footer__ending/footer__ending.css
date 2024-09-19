@@ -1,0 +1,57 @@
+.footer__ending {
+    position: relative;
+    width: 680px;
+    height: 340px;
+    margin-top: 65px;
+    background-color: rgba(166, 180, 151, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.footer__ending-title, .footer__input, .footer__form-button {
+    transform: scale(0);
+}
+.footer__ending:hover .footer__ending-title, .footer__ending:hover .footer__input, .footer__ending:hover .footer__form-button {
+    transform: scale(1);
+    transition: transform .3s;
+}
+
+.footer__ending:hover .footer__ending-title {
+    transition-delay: 3s;   
+}
+
+.footer__ending:hover .footer__input:first-of-type {
+    transition-delay: 3.3s;
+}
+.footer__ending:hover .footer__input:last-of-type {
+    transition-delay: 3.6s;
+}
+.footer__ending:hover .footer__form-button {
+    transition-delay: 3.9s;
+}
+
+.footer__form-button:before, .footer__form-button:after {
+    width: 0;
+}
+.footer__ending:hover .footer__form-button:before, .footer__ending:hover .footer__form-button:after {
+    width: 40px;
+    transition: width 0.6s ease 4.2s;
+}
+
+
+.footer__ending:hover .footer__secret {
+    animation: none;
+}
+.footer__ending:hover .footer__secret:before {
+    animation: countdown 3s step-end;
+    animation-fill-mode: forwards;
+}
+@keyframes countdown {
+    0%{content: '3';}
+    33%{content: '2';}
+    66%{content: '1';}
+    100%{content: '';}
+}

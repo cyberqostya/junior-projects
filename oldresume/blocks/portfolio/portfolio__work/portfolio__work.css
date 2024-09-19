@@ -1,0 +1,47 @@
+.portfolio__work {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 260px;
+  background-size: cover;
+  background-position: center;
+  padding: 0 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #000;
+  box-sizing: border-box;
+  background-blend-mode: overlay;
+  transition: background-color 0.3s;
+}
+
+.portfolio__work_travel {
+  background-image: url('../../../images/travel.png');
+}
+
+.portfolio__work_photo {
+  background-image: url('../../../images/photo.png');
+}
+
+.portfolio__work_trade {
+  background-image: url('../../../images/trade.png');
+}
+
+.portfolio__work_forest {
+  background-image: url('../../../images/forest.png');
+}
+
+.portfolio__work_shop {
+  background-image: url('../../../images/shop.png');
+}
+
+
+.portfolio__work:hover {
+  background-color: rgba(0, 0, 0, .8);
+}
+
+@media screen and (max-width: 1035px) {
+  .portfolio__work {
+    height: 180px;
+    padding: 8px;
+  }
+}

@@ -1,0 +1,29 @@
+﻿.container {
+	margin: 72px 0 0;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+	.container {
+		margin-top: 24px;
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+	.container {
+		margin-top: 56px;
+	}
+}
+
+@media screen and (max-width: 1023px) {
+	.comments .container {
+		margin-top: 44px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}

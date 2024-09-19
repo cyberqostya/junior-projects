@@ -1,0 +1,11 @@
+.text {
+    text-indent: 25px;
+    line-height: 30px;
+    cursor: default;
+}
+
+@media screen and (max-width: 767px) {
+    .text {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,9 @@
+.events__card-subtitle {
+  font-family: inherit;
+  margin: 8px 0 0;
+  width: 180px;
+  font-size: 12px;
+  line-height: 150%;
+  font-weight: 400;
+  color: rgba(0,0,0,.7);
+}

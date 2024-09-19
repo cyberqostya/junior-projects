@@ -1,0 +1,29 @@
+.popup__window-shell {
+  width: 610px;
+  height: auto;
+  position: relative;
+  top: -50px;
+}
+
+.popup__window-shell_buy {
+  display: none;
+}
+
+.popup__window-shell_send {
+  display: none;
+}
+
+.popup__window-shell_buy-active {
+  display: block;
+}
+
+.popup__window-shell_send-active {
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .popup__window-shell {
+    width: 100%;
+    top: 0;
+  }
+}

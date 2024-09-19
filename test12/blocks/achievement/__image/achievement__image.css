@@ -1,0 +1,5 @@
+.achievement__image {
+    padding: 10px;
+    background-color: #fff;
+    grid-row: 1/3;
+}

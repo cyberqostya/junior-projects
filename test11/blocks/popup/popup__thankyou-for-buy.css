@@ -1,0 +1,46 @@
+.popup__thankyou-for-buy {
+  margin: 150px 0 0;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 400;
+  color: #000;
+  text-align: center;
+  display: none;
+  position: relative;
+}
+
+@media screen and (max-width: 768px) {
+  .popup__thankyou-for-buy {
+    margin: 50px 0 50px 55px;
+    text-align: left;
+    line-height: 150%;
+  }
+
+  .popup__thankyou-for-buy::before {
+    content: '';
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    background-image: url(../../images/done.svg);
+    position: absolute;
+    top: calc(50% - 20px);
+    left: -55px;
+  }
+
+  .popup__thankyou-for-buy_claim {
+    color: #fff;
+  }
+
+  .popup__thankyou-for-buy_claim::before {
+    background-image: url(../../images/done-white.svg);
+  }
+}
+
+@media screen and (min-width: 450px) and (max-width: 768px) {
+  .popup__thankyou-for-buy {
+    text-align: center;
+    width: fit-content;
+    margin: 50px auto;
+  }
+}

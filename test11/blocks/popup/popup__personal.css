@@ -1,0 +1,25 @@
+.popup__personal {
+  margin: 100px 0 0;
+  width: 240px;
+
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 400;
+  color: rgba(0,0,0,.32);
+
+  align-self: flex-start;
+}
+
+@media screen and (max-width: 768px) {
+  .popup__personal {
+    margin: 18px 0 0;
+    width: auto;
+    font-size: 10px;
+    line-height: 15px;
+  }
+
+  .popup__personal_claim {
+    color: rgba(255,255,255,.5);
+  }
+}

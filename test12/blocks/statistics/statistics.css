@@ -1,0 +1,11 @@
+@import url(./statistics__title/statistics__title.css);
+@import url(./statistics__subtitle/statistics__subtitle.css);
+@import url(./statistics__text/statistics__text.css);
+@import url(./statistics__container/statistics__container.css);
+@import url(./statistics__data/statistic__data.css);
+@import url(./statistics__data-title/statistics__data-title.css);
+@import url(./statistics__data-text/statistics__data-text.css);
+
+.statistics {
+    padding: 65px 220px;
+}

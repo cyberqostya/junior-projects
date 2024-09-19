@@ -1,0 +1,13 @@
+@import url(./header__title/header__title.css);
+@import url(./header__subtitle/header__subtitle.css);
+@import url(./header__text/header__text.css);
+
+.header {
+    margin-top: 150px;
+    height: 670px;
+    background: url(../../images/header/background.png);
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

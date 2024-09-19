@@ -1,0 +1,64 @@
+.popup__title {
+  margin: 0 0 0 80px;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 600;
+  width: 300px;
+  position: relative;
+}
+
+.popup__title::before {
+  position: absolute;
+  top: 0;
+  left: -80px;
+  content: '';
+  width: 60px;
+  height: 60px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.popup__title_buy {
+  color: #000;
+}
+
+.popup__title_buy::before {
+  background-image: url(../../images/buy-logo.svg);
+}
+
+.popup__title_send {
+  color: #fff;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  align-self: flex-start;
+}
+
+.popup__title_send::before {
+  background-image: url(../../images/send-logo.svg);
+}
+
+@media screen and (max-width: 768px) {
+  .popup__title {
+    margin: 0 0 0 50px;
+    font-size: 16px;
+    line-height: 130%;
+    width: auto;
+  }
+
+  .popup__title_send {
+    height: 40px;
+  }
+
+  .popup__title_buy {
+    width: 200px;
+  }
+
+  .popup__title::before {
+    top: -5px;
+    left: -50px;
+    width: 40px;
+    height: 40px;
+  }
+}

@@ -1,0 +1,7 @@
+.gallery__grid {
+    margin-top: 65px;
+    display: grid;
+    grid-template-rows: 200px 60px 110px 130px;
+    grid-template-columns: 286px 170px 210px;
+    background-color: #dbdbdb;
+}

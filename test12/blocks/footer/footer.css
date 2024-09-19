@@ -1,0 +1,19 @@
+@import url(./footer__button/footer__button.css);
+@import url(./footer__text/footer__text.css);
+@import url(./footer__input/footer__input.css);
+@import url(./footer__ending-title/footer__ending-title.css);
+@import url(./footer__form-button/footer__form-button.css);
+@import url(./footer__secret/footer__secret.css);
+@import url(./footer__ending/footer__ending.css);
+@import url(./footer__ending-answer/footer__ending-answer.css);
+
+.footer {
+    position: relative;
+    background: url(../../images/footer/background.png);
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 670px;
+}

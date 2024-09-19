@@ -1,0 +1,19 @@
+.reviews__arrow {
+  width: 13px;
+  height: 25px;
+  position: absolute;
+  top: 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+}
+
+.reviews__arrow_left {
+  background-image: url(../../images/reviews-arrow-left.svg);
+  left: 13px;
+}
+
+.reviews__arrow_right {
+  background-image: url(../../images/reviews-arrow-right.svg);
+  right: 13px;
+}

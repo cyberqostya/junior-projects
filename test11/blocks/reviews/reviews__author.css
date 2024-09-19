@@ -1,0 +1,8 @@
+.reviews__author {
+  margin: 20px 0 0;
+  text-align: right;
+  font-family: inherit;
+  font-style: italic;
+  font-size: 12px;
+  font-weight: 400;
+}

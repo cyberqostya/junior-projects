@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="content">
+
+    <section class="main">
+
+      <div class="main__image-container">
+        <img class="main__image" src="./images/main-background.svg" alt="image">
+        <svg class="main__animation-image" width="70%" height="100vw" fill="#000">
+          <rect width="14%" height="100%" x="0">
+            <animate attributeName="x" values="0%; 100%" dur="3.0s" repeatCount="indefinite"/>
+          </rect>        
+          <rect width="14%" height="100%" x="-14%">
+            <animate attributeName="x" values="0%; 100%" dur="3.0s" repeatCount="indefinite" begin=".75s"/>
+          </rect>
+          <rect width="14%" height="100%" x="-14%">
+            <animate attributeName="x" values="0%; 100%" dur="3.0s" repeatCount="indefinite" begin="1.5s"/>
+          </rect>
+          <rect width="14%" height="100%" x="-14%">
+            <animate attributeName="x" values="0%; 100%" dur="3.0s" repeatCount="indefinite" begin="2.25s"/>
+          </rect>
+        </svg>
+      </div>
+
+      <div class="main__leftside">
+        <img class="main__logo" src="./images/logo.svg" alt="logo">
+        <h1 class="main__title">Конференции, которые нужны</h1>
+        <div class="main__text-container">
+          <p class="main__paragraph">Мы, JUG Ru Group, делаем крупнейшие конференции для программистов и сочувствующих.</p>
+          <p class="main__paragraph">С нас — крутая программа, топовые спикеры, технические доклады без воды.</p>
+          <p class="main__paragraph"> С вас — готовность смотреть и общаться.</p>
+        </div>
+        <div class="main__buttons-container">
+          <button class="main__button main__button_buy">Купить билет</button>
+          <button class="main__button main__button_send">Послать в @$#!</button>
+        </div>
+      </div>
+    </section>
+
+    <div class="popup">
+      <div class="popup__window-shell popup__window-shell_buy">
+        <div class="popup__window popup__window_buy">
+          <h2 class="popup__title popup__title_buy">Я хочу знать, когда будет офлайн</h2>
+          <form class="popup__form" name="buyForm">
+            <input class="popup__form-input" type="email" placeholder="Укажите email" required name="input"></input>
+            <button class="popup__form-button">Подписаться</button>
+          </form>
+          <p class="popup__personal">Нажимая на кнопку вы соглашаетесь на обработку <a class="popup__personal-link" href="#">персональных данных</a></p>
+
+          <p class="popup__thankyou-for-buy">Спасибо, что подписались на нашу рассылку!</p>
+
+        </div>
+        <p class="popup__exit popup__exit_buy">Я кликнул просто посмотреть</p>
+      </div>
+
+      <div class="popup__window-shell popup__window-shell_send">
+        <div class="popup__window popup__window_send">
+          <h2 class="popup__title popup__title_send" >Идите в @$#!</h2>
+          <div class="popup__claims-container" >
+            <p class="popup__claim js-price">Вы свои цены видели?</p>
+            <p class="popup__claim js-report">Доклады ни о чем</p>
+            <p class="popup__claim js-mood">У вас там всё хорошо?</p>
+            <p class="popup__claim js-nomoney">Денег нет, но вы держитесь</p>
+          </div>
+
+          <img class="popup__thankyou-for-send-image" src="./images/nice.svg" alt="nice">
+          <p class="popup__thankyou-for-send">Спасибо, что поделились!</p>
+
+          <div class="claim-block">
+
+
+          </div>
+
+        </div>
+        <p class="popup__exit popup__exit_send">Я кликнул просто посмотреть</p>
+      </div>
+    </div>
+
+    <section class="ticket">
+      <h2 class="ticket__title">Все 7 конференций в одном билете</h2>
+      <img class="ticket__image" src="./images/ticket.png" alt="ticket">
+      <button class="ticket__button">Купить Full Pass</button>
+      <div class="ticket__about-container">
+        <div class="ticket__about">
+          <h3 class="ticket__about-title">7</h3>
+          <p class="ticket__about-subtitle">направлений</p>
+        </div>
+        <div class="ticket__about">
+          <h3 class="ticket__about-title">200</h3>
+          <p class="ticket__about-subtitle">спикеров</p>
+        </div>
+        <div class="ticket__about">
+          <h3 class="ticket__about-title">250</h3>
+          <p class="ticket__about-subtitle">докладов</p>
+        </div>
+        <div class="ticket__about">
+          <h3 class="ticket__about-title">500+</h3>
+          <p class="ticket__about-subtitle">часов контента</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="events">
+      <div class="events__card">
+        <p class="events__card-status">Онлайн</p>
+        <img class="events__card-logo" src="./images/card-logo.svg" alt="logo">
+        <h3 class="events__card-title">Heisenbug 2020 Moscow</h3>
+        <p class="events__card-subtitle">Онлайн-конференция по .NET-разработке</p>
+        <p class="events__card-date">4-7 ноября</p>
+        <button class="events__card-button">Билеты</button>
+        <a class="events__card-link" href="#">Подробнее</a>
+      </div>
+
+      <div class="events__card">
+        <p class="events__card-status">Онлайн</p>
+        <img class="events__card-logo" src="./images/card-logo.svg" alt="logo">
+        <h3 class="events__card-title">Heisenbug 2020 Moscow</h3>
+        <p class="events__card-subtitle">Онлайн-конференция по .NET-разработке</p>
+        <p class="events__card-date">4-7 ноября</p>
+        <button class="events__card-button">Билеты</button>
+        <a class="events__card-link" href="#">Подробнее</a>
+      </div>
+
+      <div class="events__card">
+        <p class="events__card-status">Онлайн</p>
+        <img class="events__card-logo" src="./images/card-logo.svg" alt="logo">
+        <h3 class="events__card-title">Heisenbug 2020 Moscow</h3>
+        <p class="events__card-subtitle">Онлайн-конференция по .NET-разработке</p>
+        <p class="events__card-date">4-7 ноября</p>
+        <button class="events__card-button">Билеты</button>
+        <a class="events__card-link" href="#">Подробнее</a>
+      </div>
+
+      <div class="events__card">
+        <p class="events__card-status">Онлайн</p>
+        <img class="events__card-logo" src="./images/card-logo.svg" alt="logo">
+        <h3 class="events__card-title">Heisenbug 2020 Moscow</h3>
+        <p class="events__card-subtitle">Онлайн-конференция по .NET-разработке</p>
+        <p class="events__card-date">4-7 ноября</p>
+        <button class="events__card-button">Билеты</button>
+        <a class="events__card-link" href="#">Подробнее</a>
+      </div>
+
+      <div class="events__card">
+        <p class="events__card-status">Онлайн</p>
+        <img class="events__card-logo" src="./images/card-logo.svg" alt="logo">
+        <h3 class="events__card-title">Heisenbug 2020 Moscow</h3>
+        <p class="events__card-subtitle">Онлайн-конференция по .NET-разработке</p>
+        <p class="events__card-date">4-7 ноября</p>
+        <button class="events__card-button">Билеты</button>
+        <a class="events__card-link" href="#">Подробнее</a>
+      </div>
+
+      <div class="events__card">
+        <p class="events__card-status">Онлайн</p>
+        <img class="events__card-logo" src="./images/card-logo.svg" alt="logo">
+        <h3 class="events__card-title">Heisenbug 2020 Moscow</h3>
+        <p class="events__card-subtitle">Онлайн-конференция по .NET-разработке</p>
+        <p class="events__card-date">4-7 ноября</p>
+        <button class="events__card-button">Билеты</button>
+        <a class="events__card-link" href="#">Подробнее</a>
+      </div>
+
+      <div class="events__card">
+        <p class="events__card-status">Онлайн</p>
+        <img class="events__card-logo" src="./images/card-logo.svg" alt="logo">
+        <h3 class="events__card-title">Heisenbug 2020 Moscow</h3>
+        <p class="events__card-subtitle">Онлайн-конференция по .NET-разработке</p>
+        <p class="events__card-date">4-7 ноября</p>
+        <button class="events__card-button">Билеты</button>
+        <a class="events__card-link" href="#">Подробнее</a>
+      </div>
+    </section>
+
+    <section class="tariffs">
+      <div class="tariffs__card">
+        <h3 class="tariffs__card-title">Personal</h3>
+        <p class="tariffs__card-subtitle">Порадовать себя</p>
+        <div class="tariffs__card-coupon-container">
+          <div class="tariffs__card-coupon">
+            <img class="tariffs__card-coupon-image" src="./images/1coupon.svg" alt="logo">
+            <h4 class="tariffs__card-coupon-title">One conference</h4>
+            <p class="tariffs__card-coupon-price">11500&#8381;</p>
+            <button class="tariffs__card-coupon-button">Купить</button>
+          </div>
+          <div class="tariffs__card-coupon">
+            <img class="tariffs__card-coupon-image" src="./images/7coupons.svg" alt="logo">
+            <h4 class="tariffs__card-coupon-title">Full Pass</h4>
+            <p class="tariffs__card-coupon-price">23000&#8381;</p>
+            <button class="tariffs__card-coupon-button">Купить</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="tariffs__line"></div>
+
+      <div class="tariffs__card">
+        <h3 class="tariffs__card-title">Standard</h3>
+        <p class="tariffs__card-subtitle">Любимым сотрудникам</p>
+        <div class="tariffs__card-coupon-container">
+          <div class="tariffs__card-coupon">
+            <img class="tariffs__card-coupon-image" src="./images/1coupon.svg" alt="logo">
+            <h4 class="tariffs__card-coupon-title">One conference</h4>
+            <p class="tariffs__card-coupon-price">23500&#8381;</p>
+            <button class="tariffs__card-coupon-button">Купить</button>
+          </div>
+          <div class="tariffs__card-coupon">
+            <img class="tariffs__card-coupon-image" src="./images/7coupons.svg" alt="logo">
+            <h4 class="tariffs__card-coupon-title">Full Pass</h4>
+            <p class="tariffs__card-coupon-price">46000&#8381;</p>
+            <button class="tariffs__card-coupon-button">Купить</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="videos">
+      <h2 class="videos__title">Видео прошлого сезона</h2>
+      <div class="videos__card">
+        <div class="videos__card-top-part"></div>
+        <div class="videos__card-bottom-part">
+          <h3 class="videos__card-title">Playwright: Web texting without drama</h3>
+          <p class="videos__card-author">Андрей Акиньшин</p>
+        </div>
+      </div>
+
+      <div class="videos__card">
+        <div class="videos__card-top-part"></div>
+        <div class="videos__card-bottom-part">
+          <h3 class="videos__card-title">Playwright: Web texting without drama</h3>
+          <p class="videos__card-author">Андрей Акиньшин</p>
+        </div>
+      </div>
+
+      <div class="videos__card">
+        <div class="videos__card-top-part"></div>
+        <div class="videos__card-bottom-part">
+          <h3 class="videos__card-title">Playwright: Web texting without drama</h3>
+          <p class="videos__card-author">Андрей Акиньшин</p>
+        </div>
+      </div>
+
+      <button class="videos__button">Показать еще</button>
+    </section>
+
+    <section class="for-what">
+      <h2 class="for-what__title">Зачем вам всё это?</h2>
+      <div class="for-what__card">
+        <img class="for-what__card-image" src="./images/for-what-time.svg" alt="image">
+        <h3 class="for-what__card-title">Сэкономить время</h3>
+        <p class="for-what__card-text">Мы нашли за вас годные материалы и экспертов, которые по-настоящему разбираются в предметной области.</p>
+      </div>
+
+      <div class="for-what__card">
+        <img class="for-what__card-image" src="./images/for-what-format.svg" alt="image">
+        <h3 class="for-what__card-title">Посмотреть контент без воды</h3>
+        <p class="for-what__card-text">У нас нет булшита, инфобизнеса и клинического идиотизма — каждый доклад позволит вам сделать выводы, которые или улучшат что-то в вашей работе, или позволят понять, куда двигаться в будущем.</p>
+      </div>
+
+      <div class="for-what__card">
+        <img class="for-what__card-image" src="./images/for-what-new-experience.svg" alt="image">
+        <h3 class="for-what__card-title">Получить актуальные знания</h3>
+        <p class="for-what__card-text">Мы следим за тем, чтобы доклады были новые и отражали реальность. Даже если вы увидите доклады о старых технологиях, вы узнаете о них что-то новое.</p>
+      </div>
+
+      <div class="for-what__line"></div>
+
+      <div class="for-what__card">
+        <img class="for-what__card-image" src="./images/for-what-lev.svg" alt="image">
+        <h3 class="for-what__card-title">На словах как Лев Толстой, и на деле Лев Толстой</h3>
+        <p class="for-what__card-text">Все доклады проверяются программными комитетами на современность, адекватность, объективность и полезность. А в программные комитеты мы берем людей, которые не только знают все о том, что происходит в уютненькой айтишечке, но и могут пояснить за адекватность происходящего.</p>
+      </div>
+    </section>
+
+    <section class="reviews">
+      <h2 class="reviews__title">Отзывы участников</h2>
+      <div class="reviews__container">
+        <div class="reviews__slider">
+          <div class="reviews__slide reviews__slide_first">
+            <p class="reviews__text">Я сравнила две конференции: оффлайн 2019 и онлайн 2020. Онлайн - супер, можно посмотреть несколько докладов, можно в комфортном режиме слушать доклады, переключаться между докладами, а не бегать между залами. Удобно задавать вопросы. Видны все детали доклада, а на последнем ряду зала в оффлайне не видно ни спикера, ни слайды. Онлайн лучше: я не трачу время на проезд и не встаю в 6 утра чтобы успеть доехать к регистрации, 5 дней конференции в онлайн лучше для усвоения докладов, чем 2 дня оффлайн. Конференция для меня - это получение новых знаний и направлений развития, онлайн формат этому полностью соответствует.</p>
+            <p class="reviews__author">Василий Лактионов</p>
+          </div>
+
+          <div class="reviews__slide reviews__slide_second">
+            <p class="reviews__text">Онлайн: - удобнее в плане общения со спикерами - не нужно тратить время и деньги на поездки - IDE и все tools под рукой и можно лайвкодить.</p>
+            <p class="reviews__author">Василий Лактионов</p>
+          </div>
+        </div>
+      </div>
+      <div class="reviews__arrow reviews__arrow_left"></div>
+      <div class="reviews__arrow reviews__arrow_right"></div>
+    </section>
+
+    <section class="about">
+      <h2 class="about__title">О нас</h2>
+      <p class="about__text">Мы, JUG Ru Group, бережно организуем крупнейшие конференции для программистов с 2013 года. В нашей команде обладатели званий Java Champion, Microsoft MVP, Google Developer Expert, Google Developer Group Lead.</p>
+      <div class="about__image-container">
+        <img class="about__image" src="./images/duck.svg" alt="duck">
+      </div>
+      <div class="about__grid">
+        <p class="about__grid-number">7</p>
+        <p class="about__grid-text">лет опыта</p>
+        <p class="about__grid-number">67</p>
+        <p class="about__grid-text">конференций проведено</p>
+        <p class="about__grid-number">30700</p>
+        <p class="about__grid-text">довольных участников</p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <img class="footer__logo" src="./images/logo.svg" alt="logo">
+      <div class="footer__social-icons">
+        <a href="#"><img class="footer__icon" src="./images/vk-logo.svg" alt="vk-logo"></a>
+        <a href="#"><img class="footer__icon" src="./images/fb-logo.svg" alt="fb-logo"></a>
+        <a href="#"><img class="footer__icon" src="./images/tw-logo.svg" alt="tw-logo"></a>
+      </div>
+      <div class="footer__contacts">
+        <p class="footer__contacts-name">Информация</p>
+        <p class="footer__contacts-data">info@jugru.org</p>
+        <p class="footer__contacts-name">Поддержка</p>
+        <p class="footer__contacts-data">support@jugru.org</p>
+      </div>
+      <div class="footer__contacts">
+        <p class="footer__contacts-name">Офис</p>
+        <p class="footer__contacts-data">+7 812 904 4212</p>
+        <p class="footer__contacts-name">Отдел продаж</p>
+        <p class="footer__contacts-data">+7 812 904 6648</p>
+      </div>
+      <a class="footer__link" href="#">Политика конфиденциальности</a>
+      <a class="footer__link" href="#">Нормы поведения</a>
+      <p class="footer__copyright">&copy;2012-2020 JUG Ru Group.</p>
+    </footer>
+
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>

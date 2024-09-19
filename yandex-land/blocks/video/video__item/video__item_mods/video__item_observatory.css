@@ -1,0 +1,10 @@
+﻿.video__item_observatory {
+	background-image: url("../../../../images/video__item-2.jpg");
+	margin-left: 17px;
+}
+
+@media screen and (max-width: 767px) {
+	.video__item_observatory {
+		margin: 8px 0 0;
+	}
+}

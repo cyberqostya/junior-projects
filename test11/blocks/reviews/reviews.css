@@ -1,0 +1,23 @@
+@import url(./reviews__title.css);
+@import url(./reviews__container.css);
+@import url(./reviews__text.css);
+@import url(./reviews__author.css);
+@import url(./reviews__arrow.css);
+@import url(./reviews__slide.css);
+@import url(./reviews__slider.css);
+
+.reviews {
+  margin: 50px 0 150px;
+  padding: 0 40px;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .reviews {
+    display: block;
+  }
+}

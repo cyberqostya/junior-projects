@@ -1,0 +1,13 @@
+.divide__back {
+  width: 60%;
+  height: 98%;
+  position: absolute;
+  top: 1px;
+  background: linear-gradient(to right, transparent, #243949);
+  animation: toright .89s cubic-bezier(.2,.85,.85,0.1) infinite .6s;
+}
+
+@keyframes toright {
+  0%{left: -100%;}
+  100%{left: 100%;}
+}

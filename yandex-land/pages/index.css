@@ -1,0 +1,58 @@
+﻿@import url('../blocks/header/header.css');
+@import url('../blocks/lead/lead.css');
+@import url('../blocks/intro/intro.css');
+@import url('../blocks/photo-grid/photo-grid.css');
+@import url('../blocks/places/places.css');
+@import url('../blocks/place/place.css');
+@import url('../blocks/content-title/content-title.css');
+@import url('../blocks/content-subtitle/content-subtitle.css');
+@import url('../blocks/container/container.css');
+@import url('../blocks/video/video.css');
+@import url('../blocks/comments/comments.css');
+@import url('../blocks/comment/comment.css');
+@import url('../blocks/cover/cover.css');
+@import url('../blocks/footer/footer.css');
+
+@font-face {
+	font-family: Inter;
+	font-weight: 300;
+	src: url("../fonts/Inter-Light.woff");
+}
+
+@font-face {
+	font-family: Inter;
+	font-weight: 400;
+	src: url("../fonts/Inter-Regular.woff");
+}
+
+@font-face {
+	font-family: Inter;
+	font-weight: 600;
+	src: url("../fonts/Inter-SemiBold.woff");
+}
+
+@font-face {
+	font-family: Inter;
+	font-weight: 700;
+	src: url("../fonts/Inter-Bold.woff");
+}
+
+@font-face {
+	font-family: Inter;
+	font-weight: 900;
+	src: url("../fonts/Inter-Black.woff");
+}
+
+body {
+	background: #2a2c2f;
+}
+
+.page {
+	min-width: 320px;
+	max-width: 1440px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+

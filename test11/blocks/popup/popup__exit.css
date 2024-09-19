@@ -1,0 +1,81 @@
+.popup__exit {
+  margin: 0;
+  padding: 30px 15px;
+  height: 50px;
+  position: absolute;
+  bottom: -70px;
+  left: calc(50% - 305px);
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  border-radius: 12px;
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.popup__exit::before {
+  content: '';
+  width: 25px;
+  height: 40px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: block;
+  margin-right: 20px;
+}
+
+.popup__exit_buy {
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #aaa;
+}
+
+.popup__exit_buy::before {
+  background-image: url(../../images/arrow.svg);
+}
+
+.popup__exit_send {
+  color: #fff;
+  background-color: #000;
+  border: 1px solid #444;
+}
+
+.popup__exit_send::before {
+  background-image: url(../../images/arrow-white.svg);
+}
+
+@media screen and (max-width: 768px) {
+  .popup__exit {
+    margin: 30px 0 0;
+    padding: 0;
+    height: auto;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    font-size: 14px;
+    line-height: 130%;
+    border-radius: 0;
+    border: none;
+  }
+
+  .popup__exit::before {
+    width: 10px;
+    height: 18px;
+    margin-right: 12px;
+  }
+
+  .popup__exit_send {
+    border: none;
+    color: #000;
+    background-color: transparent;
+  }
+
+  .popup__exit_send::before {
+    background-image: url(../../images/arrow.svg);
+  }
+}

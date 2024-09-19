@@ -1,0 +1,22 @@
+@import url(./footer__logo.css);
+@import url(./footer__social-icons.css);
+@import url(./footer__icon.css);
+@import url(./footer__contacts.css);
+@import url(./footer__contacts-name.css);
+@import url(./footer__contacts-data.css);
+@import url(./footer__link.css);
+@import url(./footer__copyright.css);
+
+.footer {
+  margin: 20px 0 0;
+  padding: 0 20px 20px;
+  position: relative;
+
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    display: block;
+  }
+}

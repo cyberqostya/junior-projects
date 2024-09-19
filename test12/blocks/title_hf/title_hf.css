@@ -1,0 +1,11 @@
+.title_hf {
+    font-family: Roboto;
+    font-weight: 600;
+    color: #fff;
+    font-size: 21px;
+    letter-spacing: 0.84px;
+}
+
+.span_hf {
+    font-size: 32px;
+}

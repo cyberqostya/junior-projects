@@ -1,0 +1,10 @@
+.reviews__slide {
+  margin: 0;
+  background-color: #f8f8f8;
+  border-radius: 15px;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  padding: 15px;
+  top: 0;
+  width: calc(100vw - 80px);
+  box-sizing: border-box;
+}

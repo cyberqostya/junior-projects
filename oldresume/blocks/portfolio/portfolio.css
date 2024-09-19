@@ -1,0 +1,25 @@
+@import url(./portfolio__work/portfolio__work.css);
+@import url(./portfolio__description/portfolio__description.css);
+@import url(./portfolio__button/portfolio__button.css);
+
+.portfolio {
+  display: grid;
+  grid-template-columns: repeat(2, 455px);
+  grid-gap: 60px;
+}
+
+@media screen and (max-width: 767px) {
+  .portfolio {
+    justify-content: center;
+    grid-template-columns: 315px;
+    grid-gap: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1035px) {
+  .portfolio {
+    justify-content: center;
+    grid-template-columns: repeat(2, 315px);
+    grid-gap: 30px;
+  }
+}

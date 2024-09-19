@@ -1,0 +1,13 @@
+.button {
+    letter-spacing: 0.6px;
+    background: none;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 8px;
+    font-size: 23px;
+    outline: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: Roboto;
+    position: relative;
+}

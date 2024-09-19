@@ -1,0 +1,11 @@
+.main__text-container {
+  margin: 32px 0 0;
+  width: 530px;
+}
+
+@media screen and (max-width: 768px) {
+  .main__text-container {
+    margin: 18px 0 0;
+    width: auto;
+  }
+}

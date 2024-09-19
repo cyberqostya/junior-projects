@@ -1,0 +1,11 @@
+.about__aim {
+  margin-top: 60px;
+  font-style: italic;
+}
+
+@media screen and (min-width: 768px) and (max-width: 900px) {
+  .about__aim {
+    margin-top: 30px;
+    font-size: 16px;
+  }
+}

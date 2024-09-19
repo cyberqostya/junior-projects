@@ -1,0 +1,21 @@
+@import url(./for-what__title.css);
+@import url(./for-what__card.css);
+@import url(./for-what__card-image.css);
+@import url(./for-what__card-title.css);
+@import url(./for-what__card-text.css);
+@import url(./for-what__line.css);
+
+.for-what {
+  margin: 50px 0 0;
+  padding: 0 0 35px;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid rgba(0,0,0,.5);
+
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .for-what {
+    display: block;
+  }
+}

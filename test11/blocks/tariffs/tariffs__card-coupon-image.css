@@ -1,0 +1,6 @@
+.tariffs__card-coupon-image {
+  width: 75px;
+  height: 50px;
+  object-fit: contain;
+  object-position: bottom;
+}

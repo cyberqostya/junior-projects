@@ -1,0 +1,33 @@
+.foursquare {
+    width: 350px;
+    height: 350px;
+    border: 30px solid #2f80ed;
+    position: absolute;
+    top: 1100px;
+    left: 400px;
+    animation: rotation 50s linear infinite;
+}
+
+@media screen and (max-width: 520px) {
+    .foursquare {
+        bottom: 400px;
+    }
+}
+
+@keyframes rotation {
+    100%{transform: rotate(360deg);}
+}
+
+@media screen and (max-width: 767px) {
+    .foursquare {
+        top: 1400px;
+        left: 80px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1035px) {
+    .foursquare {
+        top: 800px;
+        left: 100px;
+    }
+}

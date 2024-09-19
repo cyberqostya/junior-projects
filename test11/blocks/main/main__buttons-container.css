@@ -1,0 +1,21 @@
+.main__buttons-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .main__buttons-container {
+    position: relative;
+    margin: 60px 0 0;
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 768px)  {
+  .main__buttons-container {
+    justify-content: space-evenly;
+  }
+}

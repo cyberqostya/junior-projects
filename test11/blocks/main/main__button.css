@@ -1,0 +1,95 @@
+.main__button {
+  width: 210px;
+  height: 65px;
+  padding: 0;
+  position: relative;
+
+  border-radius: 12px;
+  border: none;
+  font-size: 18px;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-weight: 400;
+
+  transition: transform .3s, box-shadow .3s;
+  outline: none;
+  cursor: pointer;
+}
+
+.main__button_buy {
+  background-color: #fbcb03;
+  color: #000;
+  margin-right: 20px;
+}
+
+.main__button_send {
+  background-color: #000;
+  color: #fff;
+}
+
+.main__button::after {
+  content: '';
+  position: absolute;
+  background-size: cover;
+}
+
+.main__button_buy::after {
+  top: -52px;
+  left: calc(50% - 26px);
+  width: 52px;
+  height: 52px;
+  background-image: url(../../images/buy-logo.svg);
+}
+
+.main__button_send::after {
+  top: -44px;
+  left: calc(50% - 22px);
+  width: 44px;
+  height: 44px;
+  background-image: url(../../images/send-logo.svg);
+}
+
+.main__button:hover {
+  box-shadow: 0 4px 4px rgba(0,0,0,.25);
+  transform: translateY(-4px);
+}
+
+.main__button:active {
+  box-shadow: none;
+  transform: translateY(4px);
+}
+
+.main__button_buy:active {
+  background-color: #e6b901;
+}
+
+.main__button_send:active {
+  background-color: rgba(0,0,0,.8);
+}
+
+@media screen and (max-width: 768px) {
+  .main__button {
+    width: 125px;
+    height: 42px;
+  
+    border-radius: 7px;
+    font-size: 11px;
+  }
+
+  .main__button_buy {
+    margin: 0;
+  }
+
+  .main__button_buy::after {
+    top: -34px;
+    left: calc(50% - 17px);
+    width: 34px;
+    height: 34px;
+  }
+  
+  .main__button_send::after {
+    top: -28px;
+    left: calc(50% - 14px);
+    width: 28px;
+    height: 28px;
+  }
+}

@@ -1,0 +1,24 @@
+@import url(./events__card.css);
+@import url(./events__card-status.css);
+@import url(./events__card-logo.css);
+@import url(./events__card-title.css);
+@import url(./events__card-subtitle.css);
+@import url(./events__card-date.css);
+@import url(./events__card-button.css);
+@import url(./events__card-link.css);
+
+.events {
+  margin: 50px 0 0;
+  padding: 0 20px;
+  width: 100%;
+  max-width: 500px;
+  box-sizing: border-box;
+
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .events {
+    display: block;
+  }
+}

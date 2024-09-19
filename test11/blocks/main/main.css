@@ -1,0 +1,31 @@
+@import url(./main__leftside.css);
+@import url(./main__logo.css);
+@import url(./main__title.css);
+@import url(./main__text-container.css);
+@import url(./main__paragraph.css);
+@import url(./main__buttons-container.css);
+@import url(./main__button.css);
+@import url(./main__animation-image.css);
+@import url(./main__image-container.css);
+@import url(./main__image.css);
+
+.main {
+  margin: 0;
+  padding: 80px;
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  border-top: 1px solid transparent;
+
+  position: relative;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    width: 100%;
+    padding: 0 20px;
+    height: auto;
+    box-sizing: border-box;
+  }
+}

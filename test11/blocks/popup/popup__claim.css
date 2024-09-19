@@ -1,0 +1,32 @@
+.popup__claim {
+  margin: 20px 0 0;
+  border-radius: 45px;
+  border: 1px solid #fff;
+  height: 50px;
+  width: 100%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  cursor: pointer;
+
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+
+  transition: background-color .3s, color .3s;
+}
+
+.popup__claim:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+@media screen and (max-width: 768px) {
+  .popup__claim {
+    margin: 10px 0 0;
+    height: 35px;
+    font-size: 12px;
+  }
+}

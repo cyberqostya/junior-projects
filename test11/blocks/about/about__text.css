@@ -1,0 +1,10 @@
+.about__text {
+  margin: 20px 0 0;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 150%;
+  font-weight: 400;
+  color: #fff;
+  position: relative;
+  z-index: 2;
+}

@@ -1,0 +1,14 @@
+@import url(./skills__skill/skills__skill.css);
+
+.skills {
+    line-height: 60px;
+    margin-top: 60px;
+    word-spacing: 15px;
+    font-size: 25px;
+}
+
+@media screen and (max-width: 767px) {
+    .skills {
+        font-size: 18px;
+    }
+}

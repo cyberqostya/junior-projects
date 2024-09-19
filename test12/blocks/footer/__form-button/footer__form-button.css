@@ -1,0 +1,34 @@
+.footer__form-button {
+    text-transform: uppercase;
+    border: 1px solid #fff;
+    background: none;
+    padding: 10px 30px;
+    margin-top: 40px;
+    color: #fff;
+    font-family: Roboto;
+    font-weight: 800;
+    font-size: 20px;
+    outline: none;
+    position: relative;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.footer__form-button:before {
+    content: '';
+    width: 40px;
+    height: 1px;
+    position: absolute;
+    background: #fff;
+    top: 50%;
+    right: 160px;
+}
+.footer__form-button:after {
+    content: '';
+    width: 40px;
+    height: 1px;
+    position: absolute;
+    background: #fff;
+    top: 50%;
+    left: 160px;
+}

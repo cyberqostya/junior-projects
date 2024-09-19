@@ -1,1 +1,1 @@
-cyberqostya.github.io/testovie-zadaniya
+https://cyberqostya.github.io/testovie-zadaniya
